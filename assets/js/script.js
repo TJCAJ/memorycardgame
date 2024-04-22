@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     ];
 
+
     // Pushing in the array with cards
 
     /*myCards.push(newDeckObject);*/
