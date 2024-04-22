@@ -89,6 +89,43 @@
     opacity: 1;
 }
 
+/* -- game score and reset section -- */
+
+#reset-button {
+    font-size: large;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: aliceblue;
+    box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
+}
+
+#reset-button:hover {
+    transform: scale(1.03);
+}
+
+#scores {
+    font-size: large;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: aliceblue;
+    box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
+}
+
+.button-styles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(200, 39, 39);
+    box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
+    text-transform: uppercase;
+    text-align: center;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+}
+
 
 /* -- footer -- */
 
