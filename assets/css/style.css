@@ -221,7 +221,7 @@ by Youtube channel Code Grind ('https: //www.youtube.com/watch?v=B6aJpbX_IZU')--
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: rgb(200, 39, 39);
+    background-color: rgb(82, 21, 152);
     box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
     text-transform: uppercase;
     text-align: center;
@@ -239,7 +239,7 @@ footer {
     display: flex;
     padding: 15px;
     text-align: center;
-    background-color: rgb(200, 39, 39);
+    background-color: rgb(82, 21, 152);
 
 }
 
