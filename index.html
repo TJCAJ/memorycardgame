@@ -21,6 +21,16 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="/assets/favicon/site.webmanifest">
 
+    <style>
+        #modal.open {
+            display: block;
+        }
+
+        #overlay.open {
+            display: block;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -40,6 +50,18 @@
     <!-- Modal section with info how to play -->
 
     <section id="modal-info">
+        <button id="open-modal-btn">INFO</button>
+        </div>
+
+        <div id="overlay"></div>
+
+        <div id="modal">
+            <h2>MEMORY WITH PLAYING CARDS</h2>
+            <br>
+            <p>This game is an easy-to-play version for one player.<br><br>
+                Pair cards with the same value in RED or BLACK to add score.<br><br>Test your memory, and
+                reveal
+                the most pairs as fast as you can!</p>
 
     </section>
 
