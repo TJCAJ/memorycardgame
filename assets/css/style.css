@@ -33,6 +33,7 @@
 
 .gameboard {
     display: flex;
+    flex-wrap: wrap;
     padding: 0 4px;
     align-items: center;
     background-color: rgb(220, 202, 42);
@@ -46,26 +47,23 @@
 /* test with grid container --*/
 
 .cards-container {
-    display: block;
-    box-sizing: border-box;
+    display: grid;
     align-items: center;
     grid-template-columns: repeat(4, 1fr);
-    grid-area: auto;
+    grid-gap: 2em;
     margin-left: auto;
     margin-right: auto;
-
-}
-
-.cards-container div {
-    display: inline-block;
-    height: 120px;
-    width: 90px;
     margin-top: 2vh;
     margin-bottom: 2vh;
+}
+
+.card {
+    height: 120px;
+    width: 90px;
     background-color: azure;
     background-image: url("../images/BACK.png");
     background-position-x: center;
-    background-position-y: -0.4vh;
+    background-position-y: -0.2vh;
     background-size: 96%;
     border-radius: 6px;
     place-items: center;
