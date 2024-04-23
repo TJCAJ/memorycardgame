@@ -50,7 +50,7 @@
 
 #modal-info {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     padding: 10px;
     border-radius: 6px;
@@ -209,12 +209,34 @@ by Youtube channel Code Grind ('https: //www.youtube.com/watch?v=B6aJpbX_IZU')--
     transform: scale(1.03);
 }
 
-#scores {
+#play-button {
     font-size: large;
     padding: 10px;
     border-radius: 6px;
     background-color: aliceblue;
     box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
+}
+
+#play-button:hover {
+    transform: scale(1.03);
+}
+
+#score {
+    font-size: large;
+    border-radius: 6px;
+    background-color: aliceblue;
+    box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
+    width: 120px;
+    align-content: center;
+}
+
+#show-timeup {
+    font-size: large;
+    border-radius: 6px;
+    background-color: aliceblue;
+    box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
+    width: 120px;
+    align-content: center;
 }
 
 .button-styles {

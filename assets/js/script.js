@@ -80,10 +80,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Add function of timer
 
-    function timer() {
+    let count = 60;
+    let timer;
 
-    }
-
+    document.getElementById("play-button").addEventListener("click", function () {
+        timer = setInterval(function () {
+            count--;
+            console.log(count);
+            if (count === 0) {
+                clearInterval(timer);
+                document.getElementById("end").innerHTML = "TIME UP";
+            }
+        }, 1000);
+    });
 
 
 
