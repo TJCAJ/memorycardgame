@@ -38,10 +38,10 @@
 #overlay {
     display: none;
     position: absolute;
-    top: 25%;
-    left: 10%;
-    right: 10%;
-    bottom: 25%;
+    top: 20%;
+    left: 20%;
+    right: 20%;
+    bottom: 20%;
     background-color: rgb(247, 245, 227);
     border-radius: 6px;
     opacity: 75%;
@@ -52,6 +52,7 @@
     display: flex;
     justify-content: space-around;
     text-align: center;
+    text-transform: uppercase;
     padding: 10px;
     border-radius: 6px;
     background-color: rgb(220, 202, 42);
@@ -67,8 +68,30 @@
     box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
     font-family: "Rubik", sans-serif;
     font-size: large;
+    border: 2px solid rgb(82, 21, 152);
 }
 
+#open-modal-btn>h2 {
+    color: azure;
+    border: 2px solid rgb(82, 21, 152);
+}
+
+#open-modal-btn:hover {
+    transform: scale(1.10);
+}
+
+#modal-play-btn {
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
+    font-family: "Rubik", sans-serif;
+    font-size: large;
+    border: 2px solid rgb(82, 21, 152);
+}
+
+#modal-play-btn:hover {
+    transform: scale(1.20);
+}
 
 /* -- game area -- */
 

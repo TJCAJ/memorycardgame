@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Add function of timer
 
-    let count = 60;
+    let count = 120;
     let timer;
 
     function startTimer() {
@@ -94,23 +94,19 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 1000);
     }
 
-    function resetTimer() {
-        clearInterval(timer);
-        count = 60;
-        updateTimer();
+    function reloadPage() {
+        /* clearInterval(timer);
+         count = 120;
+         updateTimer();*/
+        location.reload();
     }
 
     function updateTimer() {
         document.getElementById("countdown-timer").textContent = count;
     }
 
-    document.getElementById("cardcontainer").addEventListener("click", startTimer);
-    document.getElementById("reset-button").addEventListener("click", resetTimer);
-
-
-
-
-
+    document.getElementById("modal-play-btn").addEventListener("click", startTimer);
+    document.getElementById("reset-button").addEventListener("click", reloadPage);
 
 
 
@@ -119,6 +115,10 @@ document.addEventListener('DOMContentLoaded', function () {
     function addScore() {
 
     }
+
+
+
+
 
 
     // Modal with game info
