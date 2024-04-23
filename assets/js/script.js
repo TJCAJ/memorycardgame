@@ -83,16 +83,32 @@ document.addEventListener('DOMContentLoaded', function () {
     let count = 60;
     let timer;
 
-    document.getElementById("play-button").addEventListener("click", function () {
+    function startTimer() {
         timer = setInterval(function () {
             count--;
-            console.log(count);
+            updateTimer();
             if (count === 0) {
                 clearInterval(timer);
-                document.getElementById("end").innerHTML = "TIME UP";
+                document.getElementById("countdown-timer").textContent = "TIME UP";
             }
         }, 1000);
-    });
+    }
+
+    function resetTimer() {
+        clearInterval(timer);
+        count = 60;
+        updateTimer();
+    }
+
+    function updateTimer() {
+        document.getElementById("countdown-timer").textContent = count;
+    }
+
+    document.getElementById("cardcontainer").addEventListener("click", startTimer);
+    document.getElementById("reset-button").addEventListener("click", resetTimer);
+
+
+
 
 
 
