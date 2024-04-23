@@ -2,14 +2,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
 
-    // Add function to start the game
-
-
-
-
-
-
-    // Add function for cards that are clicked and match pairs
+    // Function for cards that are clicked and match pairs
 
     /* This part of the javascript code is a both a copy and a minor rewrite of Youtube channel
     Code Grind('https: //www.youtube.com/watch?v=B6aJpbX_IZU') */
@@ -78,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-    // Add function of timer
+    // Functions related to timer and starting the game
 
     let count = 120;
     let timer;
@@ -94,6 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 1000);
     }
 
+    // Changed reeset function to reloadPage
     function reloadPage() {
         /* clearInterval(timer);
          count = 120;
