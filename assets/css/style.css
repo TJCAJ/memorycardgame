@@ -148,7 +148,6 @@
     max-height: 119px;
     transition: 0.3s all ease;
     opacity: 0;
-    align-items: center;
     padding: 3px 3px 3px 3px;
 }
 
@@ -227,7 +226,8 @@ by Youtube channel Code Grind ('https: //www.youtube.com/watch?v=B6aJpbX_IZU')--
 
 /* -- game score and reset section -- */
 
-#reset-button {
+#reset-button,
+#shuffle-cards {
     font-size: large;
     padding: 10px;
     border-radius: 6px;
@@ -235,7 +235,8 @@ by Youtube channel Code Grind ('https: //www.youtube.com/watch?v=B6aJpbX_IZU')--
     box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
 }
 
-#reset-button:hover {
+#reset-button:hover,
+#shuffle-cards:hover {
     transform: scale(1.03);
 }
 

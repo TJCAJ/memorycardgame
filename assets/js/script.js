@@ -132,4 +132,21 @@ document.addEventListener('DOMContentLoaded', function () {
         modal.classList.remove("open")
         overlay.classList.remove("open")
     }
+
+    // Add function to shuffle cards
+
+    document.getElementById('shuffle-cards').addEventListener('click', function () {
+        shuffleCards();
+    });
+
+    function shuffleCards() {
+        const cardlist = document.getElementById('card-list');
+        const cards = Array.from(cardlist.children);
+
+        cards.sort(() => Math.random() - 0.5);
+
+        cards.forEach(card => cardlist.appendChild(card));
+    }
+
+
 })
