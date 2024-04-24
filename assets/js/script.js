@@ -50,27 +50,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-    // Add function to shuffle cards
-
-    const shufflecards = document.querySelectorAll(".cards");
-
-
-
-
-
-
-
-    // Add function to reset board
-
-    function resetBoard() {
-
-    }
-
-
-
-
-
-
     // Functions related to timer and starting the game
 
     let count = 120;
