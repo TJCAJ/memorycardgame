@@ -86,8 +86,8 @@
     transform: scale(1.10);
 }
 
-#modal-play-btn {
-    padding: 25px;
+#close-modal-btn {
+    padding: 15px;
     border-radius: 6px;
     box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
     font-family: "Rubik", sans-serif;
@@ -95,7 +95,7 @@
     border: 2px solid rgb(82, 21, 152);
 }
 
-#modal-play-btn:hover {
+#close-modal-btn:hover {
     transform: scale(1.20);
 }
 
