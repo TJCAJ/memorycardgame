@@ -165,6 +165,7 @@
 .card.clicked {
     background-color: rgb(0, 0, 0);
     background-image: none;
+    pointer-events: none;
 }
 
 .card.checked {
@@ -234,7 +235,7 @@ by Youtube channel Code Grind ('https: //www.youtube.com/watch?v=B6aJpbX_IZU')--
 /* -- game score and reset section -- */
 
 #reset-button,
-#shuffle-cards,
+#sshuffle-start-button,
 #countdown-timer {
     font-size: large;
     padding: 10px;
@@ -247,7 +248,7 @@ by Youtube channel Code Grind ('https: //www.youtube.com/watch?v=B6aJpbX_IZU')--
 }
 
 #reset-button:hover,
-#shuffle-cards:hover {
+#shuffle-start-button:hover {
     transform: scale(1.03);
 }
 
@@ -264,7 +265,7 @@ by Youtube channel Code Grind ('https: //www.youtube.com/watch?v=B6aJpbX_IZU')--
     transform: scale(1.03);
 }*/
 
-#score {
+#shuffle-start-button {
     font-size: large;
     border-radius: 6px;
     background-color: aliceblue;
@@ -344,7 +345,7 @@ footer h4 {
 @media (max-width:500px) {
 
     #reset-button,
-    #shuffle-cards {
+    #shuffle-start-button {
 
         width: 150px;
         padding: 10px;

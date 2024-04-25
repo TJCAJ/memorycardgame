@@ -71,14 +71,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Functions related to timer and starting the game
 
-    let count = 120;
+    let count = 0;
     let timer;
 
     function startTimer() {
+        clearInterval(timer);
         timer = setInterval(function () {
-            count--;
+            count++;
             updateTimer();
-            if (count <= 0) {
+            if (count >= 30) {
                 clearInterval(timer);
                 document.getElementById("countdown-timer").textContent = "TIME UP";
             }
@@ -97,25 +98,13 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById("countdown-timer").textContent = count;
     }
 
-    document.getElementById("modal-play-btn").addEventListener("click", startTimer);
+    document.getElementById("shuffle-start-button").addEventListener("click", startTimer);
     document.getElementById("reset-button").addEventListener("click", reloadPage);
-
-
-
-    // Add function of adding score
-
-    function addScore() {
-
-    }
-
-
-
-
 
 
     // Add function to shuffle cards
 
-    document.getElementById('shuffle-cards').addEventListener('click', function () {
+    document.getElementById('shuffle-start-button').addEventListener('click', function () {
         shuffleCards();
     });
 
