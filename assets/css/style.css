@@ -54,11 +54,10 @@
     z-index: 2;
 }
 
-#modal-info {
+#start-the-game-section {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    text-transform: uppercase;
     padding: 10px;
     padding-top: 30px;
     border-radius: 6px;
@@ -249,21 +248,8 @@ by Youtube channel Code Grind ('https: //www.youtube.com/watch?v=B6aJpbX_IZU')--
 
 #reset-button:hover,
 #shuffle-start-button:hover {
-    transform: scale(1.03);
+    transform: scale(1.10);
 }
-
-/*
-#play-button {
-    font-size: large;
-    padding: 10px;
-    border-radius: 6px;
-    background-color: aliceblue;
-    box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
-}
-
-#play-button:hover {
-    transform: scale(1.03);
-}*/
 
 #shuffle-start-button {
     font-size: large;
@@ -274,6 +260,7 @@ by Youtube channel Code Grind ('https: //www.youtube.com/watch?v=B6aJpbX_IZU')--
     padding: 10px;
     align-content: center;
     margin: 10px;
+    text-transform: uppercase;
 }
 
 #countdown-timer {
