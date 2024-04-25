@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
         timer = setInterval(function () {
             count--;
             updateTimer();
-            if (count === 0) {
+            if (count <= 0) {
                 clearInterval(timer);
                 document.getElementById("countdown-timer").textContent = "TIME UP";
             }
