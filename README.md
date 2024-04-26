@@ -92,12 +92,12 @@ The wireframes were created in Balsamiq.
 <details open>
 <summary>Wireframe - Desktop main window</summary>
 
-![main desktop window wireframe]()
+![main desktop window wireframe](../memorycardgame/assets/docs/images/main_desktop_wireframe.png)
 </details>
 <details open>
-<summary>Wireframe - Desktop Start modal window</summary>
+<summary>Wireframe - Desktop Game Info modal window</summary>
 
-![desktop start modal wireframe](docs/images/)
+![desktop game info modal wireframe](../memorycardgame/assets/docs/images/main_desktop_with-game_info_modal.png)
 </details>
 <details>
 <summary>Wireframe - Desktop Win modal window</summary>
@@ -134,7 +134,7 @@ The wireframes were created in Balsamiq.
 
 I used my own preferences to to select colours with clean and distinctive colours in order to to create the gameboard palette with clear contrasts and a user friendly experience.
 
-![gameboard colour palette swatch](docs/images)
+![gameboard colour palette swatch](../memorycardgame/assets/docs/images/adobe%20_color_cheme.png)
 _Colour palette for the gameboard_
 
 <br>
@@ -143,13 +143,14 @@ _Colour palette for the gameboard_
 
 I chose the serif font 'Rubik' from [Google Fonts](https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap) i find the the font clean and easy to read, therefore it is used throughout the project.
 
-![screenshot of google font inknut example](docs/images/)
+![screenshot of google font inknut example](../memorycardgame/assets/docs/images/screenshot_google_fonts.png)
 
 ### **Imagery**
 
 I wished to use a wellknown and a familiar card style. After som research I gathered a selection of copyright-free images used in a previous PP2 project by Chris Watton that I found via Slack and a peer-code-review. This is a repository by the developer [ImKennyYip](https://github.com/ImKennyYip/black-jack). That is originally a tutorial for a Blackjack card game.
 
-![selection of cards front and back](docs/images/)
+![selection of cards front](../memorycardgame/assets/docs/images/front_card_ex.png)
+![selection of cards back](../memorycardgame/assets/docs/images/back_card_ex.png)
 
 <br>
 
@@ -157,7 +158,7 @@ I wished to use a wellknown and a familiar card style. After som research I gath
 
 Adobe Color Accessibility Tools was used to check for colour blind safeness in the colour palette. High Contrast levelswere important to achieve.
 
-![adobe color colour blind checker for main swatch](docs/images/gameboard_cbs.png)
+![adobe color colour blind checker for main](../memorycardgame/assets/docs/images/adobe_color_accessibility_check.png)
 
 
 
@@ -167,21 +168,23 @@ Adobe Color Accessibility Tools was used to check for colour blind safeness in t
 ## Website Features
 
 ### **1. Game Board**
-![screenshot of game board](docs/images/)  
+![screenshot of game board](../memorycardgame/assets/docs/images/screenshot__gameboard.png)  
 
 The gameboard greets the user when the page first loads. It is a 4x4 grid-style gameboard. A classic red card pattern decorates the back of the cards. Cards are flipped, one at a time, revealing original card values with jack, queen, king and aces. Matched cards stay facing up witha green border to indicate success. Unmatched cards shake briefly with a red border and flip back over. A 'Reset' button is present to reset the game experience for the current player or set it up for a new player.
 
 <br>
 
 ### **2. Game Info Modal** 
-![screenshot of game info modal](docs/images/)  
+![screenshot of game info modal](../memorycardgame/assets/docs/images/screenshot_of_game_info_modal.png)  
 
 This modal is integrated in the Header as a menu option and details the game rules. Pressing the 'Close' button takes te player back to the gameboard.
 
 <br>
   
 ### **3. Timer**
-![screenshot of timer](docs/images/feature_time_moves.png)  
+![screenshot of start button and timer](../memorycardgame/assets/docs/images/screenshot_start_time.png)
+![screenshot of timer count](../memorycardgame/assets/docs/images/screenshot_timer_count.png)
+![screenshot of message time up](../memorycardgame/assets/docs/images/screenshot_time_up.png)
 
 The timer starts when the user click on the "Start" button and works as a reversed countdown. As it reaches the end of the preset time intervall it displays that the time is up. This is to allow the player to choose whether they wish to play again and try to beat their recent score.
 
@@ -207,7 +210,7 @@ Clicking the 'Reset' button, allows the player to start over with a shuffled gam
 
 ### **Technologies & Programs Used** 
 
-- Balsamiq - used to produce wireframes 
+- Figma - used to produce wireframes 
 - GitHub - used to save and store all files for this website  
 - Git - used for version control
 - Google Fonts - fonts were imported from here 
