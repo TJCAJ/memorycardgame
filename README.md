@@ -1,4 +1,4 @@
-# Mmeory with cards
+# Memory with cards
 
 [View live project here on Github Pages]()
 
@@ -36,7 +36,7 @@ Memory with cards is an online memory card game styled with a clean and user fri
 
 ### **User/Visitor Goals**
 
-Memory with cards has been designed to be easily accessible and fun for all ages. It is a grid-style card game where the user is expected to flip matching cards and keep them locked before the tie is up. This is testing the users memory skills. Design and styling will be responsive to different media screen sizes. A preset timer iniates a counter as the user press the start button. When the time is up a message of "Time up" is displayed for the user.
+Memory with cards has been designed to be easily accessible and fun for all ages. It is a grid-style card game where the user is expected to flip as many matching cards as possible and keep them locked before the time is up. This is testing the users memory skills. Design and styling will be responsive to different media screen sizes. A preset timer iniates a counter as the user press the start button. When the time is up a message of "Time up" is displayed for the user.
 
 ### **First-Time User/Visitor**
 
@@ -60,7 +60,7 @@ Memory with cards has been designed to be easily accessible and fun for all ages
 
 ### **1. Strategy**
 
-My goal was to build an interactive, memory game suitable for all ages. I wished to use a deck of cards to set up an easy and familiar styling of the game. The theme is also to some extent a follow-up to my previous PP1 project in mind, where created website for a poker club. I was happy to see this as continuation and learn how to create various games adapted for such a website.
+My goal was to build an interactive, memory game suitable for all ages. I wished to use a deck of cards to set up an easy and familiar styling of the game. The theme is also to some extent a follow-up to my previous PP1 project in mind, where created website for a poker club. I would like to see this as continuation and learn how to create various games adapted for such a website.
 
   - The user will are able to familiarise themselves with the game rules before setting up the gameboard with various levels and time frames. 
   - The user can develop their memory skills by advancing in levels and shorter time intervalls. 
@@ -79,7 +79,7 @@ The game must be responsive and playable on mobile, tablet, and desktop-sized de
 
 The game site will have a clean layout with every feature identifiable and interactive.
 
-  - On loading, the page display the easiest level of the gameboard with 16 cards already shuffled. A preset timer will automatically begin to count as the tsart game button is clicked. A responisve modal or menu will also offer optional settings. 
+  - On loading, the page display the easiest level of the gameboard with 16 cards already shuffled. A preset timer will automatically begin to count as the start game button is clicked. A responisve modal or menu will also offer optional settings. 
   - The gameboard is situated in the center of the screen with the size of 4x4 gamecards displayed.
   - _Timer/counter_ are located above the gameboard to the right for larger screens and on top for smaller screens.
   - A _Reset_ button is located to the left, nest to the modal and and _Game Info_ button.
@@ -87,7 +87,7 @@ The game site will have a clean layout with every feature identifiable and inter
 
   ### **Wireframes**  
   
-The wireframes were created in Figma.
+The wireframes were created in Balsamiq.
 
 <details open>
 <summary>Wireframe - Desktop main window</summary>
@@ -147,7 +147,7 @@ I chose the serif font 'Rubik' from [Google Fonts](https://fonts.googleapis.com/
 
 ### **Imagery**
 
-I wished to use a wellknown and a familiar card style and gathered a selection of copyright-free images used in a previous PP2 project by ........XXXXXXXXXX
+I wished to use a wellknown and a familiar card style. After som research I gathered a selection of copyright-free images used in a previous PP2 project by Chris Watton that I found via Slack and a peer-code-review. This is a repository by the developer [ImKennyYip](https://github.com/ImKennyYip/black-jack). That is originally a tutorial for a Blackjack card game.
 
 ![selection of cards front and back](docs/images/)
 
@@ -176,24 +176,24 @@ The gameboard greets the user when the page first loads. It is a 4x4 grid-style 
 ### **2. Game Info Modal** 
 ![screenshot of game info modal](docs/images/)  
 
-Is integrated in the Header as a menu option and details the game rules. Pressing the 'Close' button takes te player back to the gameboard.
+This modal is integrated in the Header as a menu option and details the game rules. Pressing the 'Close' button takes te player back to the gameboard.
 
 <br>
   
 ### **3. Timer**
 ![screenshot of timer](docs/images/feature_time_moves.png)  
 
-The timer starts when the user click on start and works as a reversed countdown. As it reaches the end of the preset time intervall it displays that the time is up. This is to allow the player to choose whether they wish to play again and try to beat their recent score.
+The timer starts when the user click on the "Start" button and works as a reversed countdown. As it reaches the end of the preset time intervall it displays that the time is up. This is to allow the player to choose whether they wish to play again and try to beat their recent score.
 
-Pressing the 'Play Again?' button allows the player to continue the same game experience with a shuffled gameboard, reset the timer and moves counter back to zero.
+Clicking the 'Reset' button, allows the player to start over with a shuffled gameboard, reset the timer and moves counter back to zero indicated in the display with "Time".
 
 <br>
 
 ## Future Features
 
-- As mentioned earlier, I wish to include extra features and options. For this I want to add the option to change level and try an easier or a more difficult version, with various time intervalls and adding more cards to the gameboard with options of 16, 36 and 52 cards. This will improve the gaming experience as it gives the user more ways to challenge their memory skills. But this was beyond the scope of this version and will be included in the next version.
+- As mentioned earlier, I wish to include extra features and options. For this I want to add the option to change level and try an easier or a more difficult version, with various time intervalls and adding more cards to the gameboard with options of 16, 36 and 52 cards. This will improve the gaming experience as it gives the user more ways to challenge his/her memory skills. But this was beyond the scope of this version and will be included in the next version.
 
-- In addition, I would also like to add the feature for all players with an option to enter a player's name to personalise the gameboard and include a scoreboard with all of the players' names entered. This will appeal to the more competitive players and enhance the gaming experience. 
+- In addition, I would also like to add the feature for all players with an option to enter "player's name" to personalise the gameboard. As well as to include a scoreboard with at leas the top five results by the players' names entered. This will appeal to the more competitive players and enhance the gaming experience. 
 
 ---  
 
@@ -369,8 +369,5 @@ The [W3C Validator](https://validator.w3.org/) was used to validate HTML and the
 
 ### **Acknowledgements**  
   
-I would like to thank my mentor Gareth for his continued guidance and expertise,  
-my fellow classmates and cohort facilitatotor Kristyna... as well as the extended Code Institute Slack community where I found many answers to my questions just by searching previous threads. Especially my classmate Maurice who reached out to me and helped me understand the basic of javascript better in aone on one session, as I had a very tough and slow learning curve. And of course my family for their support during my long hours of studies.
-
-
-
+I would like to thank my mentor Gareth Mc Girr for his continued guidance and expertise,  
+my fellow classmates and Cohort Facilitator Kristyna Wach as well as the extended Code Institute Slack community where I found many answers to my questions just by searching previous threads. Especially my classmate Marceillo De Wet, who kindly reached out to me and helped me understand the basic of javascript better in a friendly and inspirational one to one session via Huddle. And of course my family for their support during my long hours of studies.
