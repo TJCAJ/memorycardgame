@@ -44,12 +44,14 @@
 
     <div class="button-styles">
         <div>
-            <button id="reset-button">RESET</button>
-
-            <!-- Modal section with info how to play -->
+            <!-- Modal button -->
             <button id="open-modal-btn">GAME INFO</button>
+
+            <button id="reset-button">RESET</button>
+            <button id="shuffle-start-button">Start</button>
         </div>
 
+        <!-- Modal overlay with info how to play -->
         <div id="overlay"></div>
         <div id="modal">
             <h2>MEMORY WITH CARDS</h2>
@@ -63,13 +65,11 @@
             <button id="close-modal-btn">CLOSE</button>
         </div>
         <br>
+
+        <!-- Timer -->
         <div id="timer-div">
             <h2 id="countdown-timer">TIME</h2>
         </div>
-    </div>
-
-    <div id="start-the-game-section">
-        <button id="shuffle-start-button">Start game</button>
     </div>
 
     <!-- Game Board with Playing Card Images -->
@@ -77,6 +77,9 @@
     <section class="gameboard">
 
         <div class="card-wrapper" id="cardcontainer">
+            <div id="gameboard-heading">
+                <h2>GAME BOARD</h2>
+            </div>
             <ul class="cards-ul-container" id="card-list">
 
                 <li class="card" data-type="ace-black">

@@ -14,10 +14,14 @@
 .header {
     justify-content: center;
     text-align: center;
+    background-color: #fafafa;
+    font-size: large;
+    height: 75px;
+    margin-top: 25px;
     font-family: "Rubik", sans-serif;
-    background-color: rgb(220, 202, 42);
-    padding-bottom: 2vh;
-    padding-top: 2vh;
+    font-size: large;
+
+    width: auto;
 }
 
 /* -- modal with game info -- */
@@ -75,10 +79,11 @@
     font-family: "Rubik", sans-serif;
     font-size: large;
     border: 2px solid rgb(82, 21, 152);
+    background-color: aliceblue;
 }
 
 #open-modal-btn>h2 {
-    color: azure;
+    background-color: aliceblue;
     border: 2px solid rgb(82, 21, 152);
 }
 
@@ -107,6 +112,21 @@
     background: rgb(220, 202, 42);
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+}
+
+#gameboard-heading {
+    justify-content: space-around;
+    height: 50px;
+    padding: 10px;
+    border-radius: 6px;
+    font-family: "Rubik", sans-serif;
+    font-size: large;
+    background-color: aliceblue;
+    box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
+    text-transform: uppercase;
+    width: auto;
+    margin: 75px;
 }
 
 
@@ -236,6 +256,7 @@ by Youtube channel Code Grind ('https: //www.youtube.com/watch?v=B6aJpbX_IZU')--
 #reset-button,
 #sshuffle-start-button,
 #countdown-timer {
+    font-family: "Rubik", sans-serif;
     font-size: large;
     padding: 10px;
     border-radius: 6px;
@@ -294,6 +315,7 @@ by Youtube channel Code Grind ('https: //www.youtube.com/watch?v=B6aJpbX_IZU')--
     margin-right: auto;
     padding-bottom: 2vh;
     padding-top: 2vh;
+    font-size: large;
 }
 
 
@@ -325,6 +347,8 @@ footer h4 {
     line-height: 22px;
     letter-spacing: 0.5px;
     box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
+    font-size: large;
+    font-family: "Rubik", sans-serif;
     align-items: start;
 }
 
