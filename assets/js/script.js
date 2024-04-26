@@ -38,15 +38,15 @@ document.addEventListener('DOMContentLoaded', function () {
             card.classList.add("clicked");
 
             if (counter === 0) {
-                firstSelection = card.getAttribute("playingcard");
+                firstSelection = card.getAttribute("data-type");
                 counter++;
             } else {
-                secondSelection = card.getAttribute("playingcard");
+                secondSelection = card.getAttribute("data-type");
                 counter = 0;
 
                 if (firstSelection === secondSelection) {
                     const correctCards = document.querySelectorAll(
-                        ".card[playingcard='" + firstSelection + "']"
+                        ".card[data-type='" + firstSelection + "']"
                     );
 
                     correctCards.forEach((card) => {
