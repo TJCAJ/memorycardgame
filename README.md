@@ -325,9 +325,9 @@ The [W3C Validator](https://validator.w3.org/) was used to validate HTML and the
 <details>
 <summary>Lighthouse Scores for Desktop</summary>
 
-![desktop lighthouse scores](docs/validation/desktop_lighthouse)
+![desktop lighthouse scores](./assets/docs/images/lighthouse_speed_test.png)
 </details>  
-
+ 
 
 <details>
 <summary>Lighthouse Scores for Mobile - performance optimised by using already compressed .png files.</summary>
@@ -339,7 +339,7 @@ The [W3C Validator](https://validator.w3.org/) was used to validate HTML and the
 <details>
 <summary>WAVE report for accessibility</summary>
 
-![WAVE report for accessibility](docs/validation/wave_validation)
+![WAVE report for accessibility](./assets/docs/images/wave_accessibility_report.png)
 </details>  
 
     
