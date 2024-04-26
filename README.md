@@ -16,7 +16,6 @@ Memory with cards is a matching card game built with HTML, CSS, and JavaScript. 
   * [Typography](#typography)
   * [Imagery](#imagery)
   * [Accessibility](#accessibility)
-* [Page Features](#page-features)
 * [Future Features](#future-features)
 * [Technologies Used](#technologies-used)
   * [Languages Used](#languages-used)
@@ -154,85 +153,224 @@ I wished to use a wellknown and a familiar card style and gathered a selection o
 
 <br>
 
+### **Accessibility**
+
+Adobe Color Accessibility Tools was used to check for colour blind safeness in the colour palette. High Contrast levelswere important to achieve.
+
+![adobe color colour blind checker for main swatch](docs/images/gameboard_cbs.png)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome Tell Aulin,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-
-
-
-
-#
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
 ---
 
-Happy coding!
+## Website Features
+
+### **1. Game Board**
+![screenshot of game board](docs/images/)  
+
+The gameboard greets the user when the page first loads. It is a 4x4 grid-style gameboard. A classic red card pattern decorates the back of the cards. Cards are flipped, one at a time, revealing original card values with jack, queen, king and aces. Matched cards stay facing up witha green border to indicate success. Unmatched cards shake briefly with a red border and flip back over. A 'Reset' button is present to reset the game experience for the current player or set it up for a new player.
+
+<br>
+
+### **2. Game Info Modal** 
+![screenshot of game info modal](docs/images/)  
+
+Is integrated in the Header as a menu option and details the game rules. Pressing the 'Close' button takes te player back to the gameboard.
+
+<br>
+  
+### **3. Timer**
+![screenshot of timer](docs/images/feature_time_moves.png)  
+
+The timer starts when the user click on start and works as a reversed countdown. As it reaches the end of the preset time intervall it displays that the time is up. This is to allow the player to choose whether they wish to play again and try to beat their recent score.
+
+Pressing the 'Play Again?' button allows the player to continue the same game experience with a shuffled gameboard, reset the timer and moves counter back to zero.
+
+<br>
+
+## Future Features
+
+- As mentioned earlier, I wish to include extra features and options. For this I want to add the option to change level and try an easier or a more difficult version, with various time intervalls and adding more cards to the gameboard with options of 16, 36 and 52 cards. This will improve the gaming experience as it gives the user more ways to challenge their memory skills. But this was beyond the scope of this version and will be included in the next version.
+
+- In addition, I would also like to add the feature for all players with an option to enter a player's name to personalise the gameboard and include a scoreboard with all of the players' names entered. This will appeal to the more competitive players and enhance the gaming experience. 
+
+---  
+
+## Technologies Used
+
+### **Languages Used**
+
+- HTML5
+- CSS3
+- JavaScript
+
+### **Technologies & Programs Used** 
+
+- Balsamiq - used to produce wireframes 
+- GitHub - used to save and store all files for this website  
+- Git - used for version control
+- Google Fonts - fonts were imported from here 
+- Favicon - icon were edited and downloaded from here  
+- Adobe Color - for all color palettes and accessibility color testing  
+- Google Dev Tools - to debug and for testing responsiveness 
+- Google Lighthouse - for auditing the website
+- W3C Validator - for validating the HTML and CSS code 
+- JSHint - for validating JavaScript
+
+---
+
+
+## Deployment
+
+### **How to deploy**  
+
+GitHub was used to deploy the website. These were the steps taken to achieve this:  
+
+1. Login to GitHub account.
+2. Navigate to the project repository, [memory with cards]().
+3. Click the Settings button near the top of the page.
+4. In the left-hand menu, find and click on the Pages button.
+5. In the Source section, choose 'main' from the drop-down, and select branch menu.
+6. Select 'root' from the drop-down folder menu.
+7. Click 'Save' and after a few moments the project will have been made live and a link is visible at the top of the page.
+
+<br>
+
+### **How to run this project locally**  
+
+To clone this project from GitHub:  
+
+1. Visit the [Memory With Cards repository]().
+2. Click on the <b>Code</b> dropdown menu located beside the green <b>GitPod</b> button. 
+3. Choosing your preferred cloning option of <b>HTTPS, SSH</b> or <b>GitHub CLI</b>, click on the clipboard icon to copy the displayed URL. 
+4. Open the terminal in your code editor and change the working directory to the location that you wish to use for the cloned directory.
+5. Type 'git clone' into the terminal, paste your copied link, and press enter.
+
+<br>  
+
+### **To fork the repository on GitHub** 
+  
+To make a copy of this GitHub repository that allows you to view the content and make changes without affecting the original repository, please take the following steps:
+  
+1. Login to <b>GitHub</b> and find [this repository](https://github.com/).
+2. Locate the <b>Fork</b> button on the top, right hand side of the page.
+3. Click on the <b>Fork</b> button to create a copy of the repository in your GitHub account.
+
+<br>  
+
+---
+
+## Testing
+  
+### **Initial tests**  
+  
+The primary goal for this project was for me to learn the basis of Javascript and to create a responsive game web application that delivers a positive experience for the user. I have used Chrome Dev Tools to test the game. Using the console and JSHint to debug JavaScript was new to me, but will surely be something that I will continue to use. I choosed to deploy my page late in the development process this time, to ensure that I had the ability to understand javascript better and could test my skills first, without having to commit all the time while I was still very much in a learning curve. This is why I have commits with some larger chunks of code in the beginning of the build, that I used from a locally stored version on my computer.
+  
+- Macbook Pro (5120 X 2880)  
+- LG HDR 4K" Monitor (3840x2160)
+- iPad Pro 2021
+- iPhone 12 Pro
+
+<details open>
+<summary>Popular device testing on Chrome Dev Tools</summary>
+
+![dev tools screenshot](docs/images/)
+</details>
+
+On desktop, the browsers that I had access to for testing were:
+
+- <b>Chrome</b>
+- <b>Safari</b> 
+
+The results of feature testing in <b>Chrome</b>, <b>Firefox</b>, <b>Edge</b> and <b>Safarai</b> are as follows:
+
+  
+<br>  
+  
+
+### **Bugs** 
+
+<br> 
+
+
+### **Validation**
+  
+The [W3C Validator](https://validator.w3.org/) was used to validate HTML and the CSS file was validated in the [Jigsaw W3C validator](https://jigsaw.w3.org/css-validator/). [JSHint](https://jshint.com/) was used to validate the JavaScript file. Below are the records of these validations:  
+  
+<details>
+<summary>W3C HTML Validation - no errors or warnings to show </summary>
+
+![html w3c validation](docs/validation/html)
+</details>  
+
+
+<details>
+<summary>W3C Jigsaw CSS Validation - no errors found</summary>
+
+![css w3c validation](docs/validation/css)
+</details>  
+
+
+<details>
+<summary>JSHint for JavaScript validation - no errors found. </summary>
+
+![JSHint for JavaScript validation](docs/validation/jshint)
+</details>  
+
+
+<details>
+<summary>Lighthouse Scores for Desktop</summary>
+
+![desktop lighthouse scores](docs/validation/desktop_lighthouse)
+</details>  
+
+
+<details>
+<summary>Lighthouse Scores for Mobile - performance optimised by using already compressed .png files.</summary>
+
+![desktop lighthouse scores](docs/validation/mobile_lighthouse)
+</details>  
+
+
+<details>
+<summary>WAVE report for accessibility</summary>
+
+![WAVE report for accessibility](docs/validation/wave_validation)
+</details>  
+
+    
+---
+  
+
+## Credits
+
+### **Content References**
+
+  - All content created is copyright-free resources and is intended for educational purposes.
+  - [Code Institute](https://codeinstitute.net/ie/) for their HTML/CSS/JavaScript learning material.
+  - [W3Schools](https://www.w3schools.com/) for additional learning material:
+      - Modal how to -  Dev...
+  - [xxx]() for JavaScript best-practise, tutorials and guidance.
+      - Fix double click shows matched pairs when card clicked twice - Mentor Gareth ...
+  - [Web ](https://) setup memory game with matching pairs tutorial.
+  - [P]() for help in creating function.
+  - [XX](https://) for inspiration and the idea of using an <ul> list of images to achieve the shuffle function in JavaScript.
+
+<br>
+
+### **Media References**
+
+  - [PXX](https://www.pexels.com/), playing cards
+
+  - [Favicon](https://favicon.io/) for the favicon used for this site.
+
+<br> 
+
+### **Acknowledgements**  
+  
+I would like to thank my mentor Gareth for his continued guidance and expertise,  
+my fellow classmates and cohort facilitatotor Kristyna... as well as the extended Code Institute Slack community where I found many answers to my questions just by searching previous threads. Especially my classmate Maurice who reached out to me and helped me understand the basic of javascript better in aone on one session, as I had a very tough and slow learning curve. And of course my family for their support during my long hours of studies.
+
+
+
