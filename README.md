@@ -231,7 +231,7 @@ Clicking the 'Reset' button, allows the player to start over with a shuffled gam
 GitHub was used to deploy the website. These were the steps taken to achieve this:  
 
 1. Login to GitHub account.
-2. Navigate to the project repository, [memory with cards]().
+2. Navigate to the project repository, [memorycardgame](https://github.com/TJCAJ/memorycardgame.git).
 3. Click the Settings button near the top of the page.
 4. In the left-hand menu, find and click on the Pages button.
 5. In the Source section, choose 'main' from the drop-down, and select branch menu.
@@ -256,7 +256,7 @@ To clone this project from GitHub:
   
 To make a copy of this GitHub repository that allows you to view the content and make changes without affecting the original repository, please take the following steps:
   
-1. Login to <b>GitHub</b> and find [this repository](https://github.com/).
+1. Login to <b>GitHub</b> and find [this repository](https://github.com/TJCAJ/memorycardgame).
 2. Locate the <b>Fork</b> button on the top, right hand side of the page.
 3. Click on the <b>Fork</b> button to create a copy of the repository in your GitHub account.
 
