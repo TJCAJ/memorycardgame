@@ -284,13 +284,14 @@ by Youtube channel Code Grind ('https: //www.youtube.com/watch?v=B6aJpbX_IZU')--
 /* -- game score and reset section -- */
 
 #reset-button,
-#sshuffle-start-button,
-#countdown-timer {
+#countdown-timer,
+#shuffle-start-button {
     font-family: "Rubik", sans-serif;
     font-size: large;
     padding: 10px;
     border-radius: 6px;
-    background-color: aliceblue;
+    color: black;
+    background-color: rgb(220, 202, 42);
     box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
     text-transform: uppercase;
     width: auto;
@@ -315,12 +316,8 @@ by Youtube channel Code Grind ('https: //www.youtube.com/watch?v=B6aJpbX_IZU')--
 }
 
 #countdown-timer {
-    font-size: large;
-    border-radius: 6px;
-    background-color: aliceblue;
-    box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
     width: 120px;
-    align-content: center;
+
 }
 
 #timer-div {
@@ -330,19 +327,16 @@ by Youtube channel Code Grind ('https: //www.youtube.com/watch?v=B6aJpbX_IZU')--
 
 .button-styles {
     display: flex;
+    align-items: center;
     flex-direction: row;
-    justify-content: space-around;
-    background-color: rgb(82, 21, 152);
-    box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
-    text-transform: uppercase;
+    justify-content: space-between;
     text-align: center;
-    width: auto;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 2vh;
-    padding-top: 2vh;
-    font-size: large;
+    background: url("../images/memory_headings_bkg.webp") no-repeat center center/cover;
+    padding: 2.5vh;
 }
+
 
 
 /* -- footer -- */
