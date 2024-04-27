@@ -46,30 +46,13 @@
             </div>
         </header>
 
-        <div class="button-styles">
+        <div class="navbar">
+            <!-- Modal button -->
+            <!--    <button id="open-modal-btn">GAME INFO</button> -->
             <div>
-                <!-- Modal button -->
-                <button id="open-modal-btn">GAME INFO</button>
-
                 <button id="reset-button">RESET</button>
                 <button id="shuffle-start-button">Start</button>
             </div>
-
-            <!-- Modal overlay with info how to play -->
-            <div id="overlay"></div>
-            <div id="modal">
-                <h2>MEMORY WITH CARDS</h2>
-                <br>
-                <p>This is an easy-to-play game for one player<br><br>
-                    Pair cards in RED or BLACK to add score<br><br>
-                    Click play to start countdown<br><br>
-                    Click reset and shuffle to start over<br><br>
-                </p>
-                <br>
-                <button id="close-modal-btn">CLOSE</button>
-            </div>
-            <br>
-
             <!-- Timer -->
             <div id="timer-div">
                 <h2 id="countdown-timer">TIME</h2>
@@ -81,92 +64,113 @@
         <section class="gameboard">
 
             <div class="card-wrapper" id="cardcontainer">
-                <div id="gameboard-heading">
-                    <h2>GAME BOARD</h2>
-                </div>
-                <ul class="cards-ul-container" id="card-list">
+                <div>
+                    <div id="modal-trigger">
+                        <!-- Modal overlay with info how to play -->
+                        <div id="overlay"></div>
+                        <h3>INFO & RULES</h3>
+                        <div id="modal">
+                            <h2>HOW TO PLAY</h2>
+                            <br>
+                            <br>
+                            <p>This is a <b>One Player Game</b><br><br>
+                                Pair CARDS in <b>RED</b> or <b>BLACK</b> before <b>TIME UP</b><br><br>
+                                Click <b>START</b> to <b>shuffle</b> and run <b>TIME</b>
+                                <br><br>
+                                Click <b>RESET</b> to start over<br><br>
+                                <b>You</b> have 60 seconds to make it!<br><br>
+                            </p>
+                            <br>
+                            <button id="close-modal-btn">CLOSE</button>
+                        </div>
+                    </div>
+                    <div id="gameboard-heading">
+                        <h2>GAME BOARD</h2>
+                    </div>
+                    <ul class="cards-ul-container" id="card-list">
 
-                    <li class="card" data-type="ace-black">
-                        <div class="view front-view">
-                            <img src="./assets/images/A-C.webp" alt="ace-black">
-                        </div>
-                    </li>
-                    <li class="card" data-type="queen-black">
-                        <div class="view front-view">
-                            <img src="./assets/images/Q-S.webp" alt="queen-black">
-                        </div>
-                    </li>
-                    <li class="card" data-type="jack-red">
-                        <div class="view front-view">
-                            <img src="./assets/images/J-D.webp" alt="jack-red">
-                        </div>
-                    </li>
-                    <li class="card" data-type="king-red">
-                        <div class="view front-view">
-                            <img src="./assets/images/K-D.webp" alt="king-red">
-                        </div>
-                    </li>
-                    <li class="card" data-type="jack-black">
-                        <div class="view front-view">
-                            <img src="./assets/images/J-C.webp" alt="jack-black">
-                        </div>
-                    </li>
-                    <li class="card" data-type="ace-red">
-                        <div class="view front-view">
-                            <img src="./assets/images/A-H.webp" alt="ace-red">
-                        </div>
-                    </li>
-                    <li class="card" data-type="king-black">
-                        <div class="view front-view">
-                            <img src="./assets/images/K-C.webp" alt="king-black">
-                        </div>
-                    </li>
-                    <li class="card" data-type="queen-black">
-                        <div class="view front-view">
-                            <img src="./assets/images/Q-C.webp" alt="queen-black">
-                        </div>
-                    </li>
-                    <li class="card" data-type="ace-red">
-                        <div class="view front-view">
-                            <img src="./assets/images/A-D.webp" alt="ace-red">
-                        </div>
-                    </li>
-                    <li class="card" data-type="queen-red">
-                        <div class="view front-view">
-                            <img src="./assets/images/Q-H.webp" alt="queen-red">
-                        </div>
-                    </li>
-                    <li class="card" data-type="jack-black">
-                        <div class="view front-view">
-                            <img src="./assets/images/J-S.webp" alt="jack-black">
-                        </div>
-                    </li>
-                    <li class="card" data-type="king-red">
-                        <div class="view front-view">
-                            <img src="./assets/images/K-H.webp" alt="king-red">
-                        </div>
-                    </li>
-                    <li class="card" data-type="king-black">
-                        <div class="view front-view">
-                            <img src="./assets/images/K-S.webp" alt="king-black">
-                        </div>
-                    </li>
-                    <li class="card" data-type="jack-red">
-                        <div class="view front-view">
-                            <img src="./assets/images/J-H.webp" alt="jack-red">
-                        </div>
-                    </li>
-                    <li class="card" data-type="queen-red">
-                        <div class="view front-view">
-                            <img src="./assets/images/Q-D.webp" alt="queen-red">
-                        </div>
-                    </li>
-                    <li class="card" data-type="ace-black">
-                        <div class="view front-view">
-                            <img src="./assets/images/A-S.webp" alt="ace-black">
-                        </div>
-                    </li>
-                </ul>
+                        <li class="card" data-type="ace-black">
+                            <div class="view front-view">
+                                <img src="./assets/images/A-C.webp" alt="ace-black">
+                            </div>
+                        </li>
+                        <li class="card" data-type="queen-black">
+                            <div class="view front-view">
+                                <img src="./assets/images/Q-S.webp" alt="queen-black">
+                            </div>
+                        </li>
+                        <li class="card" data-type="jack-red">
+                            <div class="view front-view">
+                                <img src="./assets/images/J-D.webp" alt="jack-red">
+                            </div>
+                        </li>
+                        <li class="card" data-type="king-red">
+                            <div class="view front-view">
+                                <img src="./assets/images/K-D.webp" alt="king-red">
+                            </div>
+                        </li>
+                        <li class="card" data-type="jack-black">
+                            <div class="view front-view">
+                                <img src="./assets/images/J-C.webp" alt="jack-black">
+                            </div>
+                        </li>
+                        <li class="card" data-type="ace-red">
+                            <div class="view front-view">
+                                <img src="./assets/images/A-H.webp" alt="ace-red">
+                            </div>
+                        </li>
+                        <li class="card" data-type="king-black">
+                            <div class="view front-view">
+                                <img src="./assets/images/K-C.webp" alt="king-black">
+                            </div>
+                        </li>
+                        <li class="card" data-type="queen-black">
+                            <div class="view front-view">
+                                <img src="./assets/images/Q-C.webp" alt="queen-black">
+                            </div>
+                        </li>
+                        <li class="card" data-type="ace-red">
+                            <div class="view front-view">
+                                <img src="./assets/images/A-D.webp" alt="ace-red">
+                            </div>
+                        </li>
+                        <li class="card" data-type="queen-red">
+                            <div class="view front-view">
+                                <img src="./assets/images/Q-H.webp" alt="queen-red">
+                            </div>
+                        </li>
+                        <li class="card" data-type="jack-black">
+                            <div class="view front-view">
+                                <img src="./assets/images/J-S.webp" alt="jack-black">
+                            </div>
+                        </li>
+                        <li class="card" data-type="king-red">
+                            <div class="view front-view">
+                                <img src="./assets/images/K-H.webp" alt="king-red">
+                            </div>
+                        </li>
+                        <li class="card" data-type="king-black">
+                            <div class="view front-view">
+                                <img src="./assets/images/K-S.webp" alt="king-black">
+                            </div>
+                        </li>
+                        <li class="card" data-type="jack-red">
+                            <div class="view front-view">
+                                <img src="./assets/images/J-H.webp" alt="jack-red">
+                            </div>
+                        </li>
+                        <li class="card" data-type="queen-red">
+                            <div class="view front-view">
+                                <img src="./assets/images/Q-D.webp" alt="queen-red">
+                            </div>
+                        </li>
+                        <li class="card" data-type="ace-black">
+                            <div class="view front-view">
+                                <img src="./assets/images/A-S.webp" alt="ace-black">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
         </section>
