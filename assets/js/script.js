@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
         timer = setInterval(function () {
             count++;
             updateTimer();
-            if (count >= 30) {
+            if (count >= 60) {
                 clearInterval(timer);
                 document.getElementById("countdown-timer").textContent = "TIME UP";
             }
@@ -93,9 +93,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Changed reeset function to reloadPage
     function reloadPage() {
-        /* clearInterval(timer);
-         count = 120;
-         updateTimer();*/
         location.reload();
     }
 

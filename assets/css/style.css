@@ -172,6 +172,59 @@ p {
     transform: scale(1.20);
 }
 
+/* Additonal Game Over Modal */
+
+#gameOverModal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100vh;
+    height: 500px;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+    background-image: url("../images/gameovermodal_bkg.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: large;
+    border-radius: 6px;
+    z-index: 70;
+    padding: 2vh;
+}
+
+.game-over-content {
+    font-size: 30px;
+    font-family: "Rubik", sans-serif;
+    color: rgb(82, 21, 152);
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.game-over-content>h2,
+p {
+    background-color: azure;
+    color: #000000;
+    font: bold;
+    padding: 10px;
+    border: 2px solid #000000;
+}
+
+#restartButton {
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
+    font-family: "Rubik", sans-serif;
+    font-size: 25px;
+    border: 2px solid rgb(82, 21, 152);
+    text-transform: uppercase;
+    font: bold;
+}
+
+
 /* -- game area -- */
 
 .gameboard {
