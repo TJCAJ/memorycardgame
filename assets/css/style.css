@@ -186,7 +186,7 @@ p {
     height: 500px;
     transform: translate(-50%, -50%);
     border-radius: 6px;
-    background-image: url("../images/gameovermodal_bkg.webp");
+    background-image: url("../images/GameOverModal_bkg.webp");
     background-repeat: no-repeat;
     background-position: center;
     font-size: large;

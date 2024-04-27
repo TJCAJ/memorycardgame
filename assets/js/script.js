@@ -75,7 +75,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     // Functions related to timer and starting the game
-
     let count = 0;
     let timer;
 
@@ -87,11 +86,11 @@ document.addEventListener('DOMContentLoaded', function () {
             if (count >= 60) {
                 clearInterval(timer);
                 document.getElementById("countdown-timer").textContent = "TIME UP";
+                gameOver();
             }
         }, 1000);
     }
 
-    // Changed reeset function to reloadPage
     function reloadPage() {
         location.reload();
     }
@@ -100,10 +99,12 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById("countdown-timer").textContent = count;
     }
 
-    document.getElementById("shuffle-start-button").addEventListener("click", startTimer);
+    document.getElementById("shuffle-start-button").addEventListener("click", function () {
+        shuffleCards();
+        startTimer();
+    });
+
     document.getElementById("reset-button").addEventListener("click", reloadPage);
-
-
     // Add function to shuffle cards
 
     document.getElementById('shuffle-start-button').addEventListener('click', function () {
@@ -118,6 +119,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
         cards.forEach(card => cardlist.appendChild(card));
     }
+    // Function to handle TIME UP
+    function gameOver() {
+        document.getElementById('gameOverModal').style.display = 'flex';
+    }
 
+    // Adds an event listener to the restart button
+    document.getElementById('restartButton').addEventListener('click', function () {
+        // Closes the modal
+        document.getElementById('gameOverModal').style.display = 'none';
+
+        // Restart the game
+        reStartGame();
+    });
+
+    function reStartGame() {
+        location.reload();
+    }
 
 })
