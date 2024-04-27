@@ -229,7 +229,6 @@ p {
     padding-right: 45px;
     padding-bottom: 45px;
     border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     width: auto;
 }
 
@@ -379,6 +378,13 @@ footer h4 {
 /* Media query - tablets and larger devices (max 400px) */
 @media (max-width:400px) {
 
+    body {
+        display: flex;
+        height: auto;
+        overflow-x: hidden;
+    }
+
+
     .header>h1 {
         box-sizing: border-box;
     }
@@ -394,19 +400,20 @@ footer h4 {
         justify-content: center;
     }
 
-
-    #reset-button,
-    #shuffle-start-button {
-        width: auto;
-        padding: 10px;
-        border-radius: 6px;
-        background-color: aliceblue;
-        box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
+    .navbar {
+        display: flex;
+        background: url("../images/memory_headings_bkg.webp") no-repeat center center/cover;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
-    .button-styles {
-        justify-content: space-around;
-        align-items: center;
+    #reset-button,
+    #countdown-timer,
+    #shuffle-start-button {
+        width: auto;
+        margin: 5px;
+        font-size: 20px;
     }
 
     .card {
@@ -428,30 +435,19 @@ footer h4 {
         width: auto;
     }
 
-    .button-styles {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        width: auto;
-
-    }
 }
 
 /* Media query - tablets and larger devices (max 900px) */
 @media (max-width:900px) {
-    .header>h1 {
-        box-sizing: border-box;
+
+    body {
+        display: flex;
+        height: auto;
+        overflow-x: hidden;
     }
 
-    .button-styles {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        width: auto;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 2vh;
-        padding-top: 2vh;
+    .header>h1 {
+        box-sizing: border-box;
     }
 
     #timer-div {
