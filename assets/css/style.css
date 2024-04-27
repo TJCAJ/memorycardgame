@@ -144,16 +144,17 @@ header {
 }
 
 #gameboard-heading {
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     height: auto;
-    padding: 10px;
+    padding: 5px;
     border-radius: 6px;
     font-family: "Rubik", sans-serif;
     font-size: large;
     background-color: aliceblue;
     box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
     text-transform: uppercase;
-    width: auto;
+    width: 250px;
     margin: 75px;
 }
 
