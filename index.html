@@ -36,146 +36,149 @@
 </head>
 
 <body>
-    <!-- Header -->
 
-    <header class="header">
-        <img id="logo" src="/assets/images/logo.png">
-        <h1 class="logo">PLAYCARD MEMORY</h1>
-    </header>
+    <main>
+        <!-- Header -->
 
-    <div class="button-styles">
-        <div>
-            <!-- Modal button -->
-            <button id="open-modal-btn">GAME INFO</button>
-
-            <button id="reset-button">RESET</button>
-            <button id="shuffle-start-button">Start</button>
-        </div>
-
-        <!-- Modal overlay with info how to play -->
-        <div id="overlay"></div>
-        <div id="modal">
-            <h2>MEMORY WITH CARDS</h2>
-            <br>
-            <p>This is an easy-to-play game for one player<br><br>
-                Pair cards in RED or BLACK to add score<br><br>
-                Click play to start countdown<br><br>
-                Click reset and shuffle to start over<br><br>
-            </p>
-            <br>
-            <button id="close-modal-btn">CLOSE</button>
-        </div>
-        <br>
-
-        <!-- Timer -->
-        <div id="timer-div">
-            <h2 id="countdown-timer">TIME</h2>
-        </div>
-    </div>
-
-    <!-- Game Board with Playing Card Images -->
-
-    <section class="gameboard">
-
-        <div class="card-wrapper" id="cardcontainer">
-            <div id="gameboard-heading">
-                <h2>GAME BOARD</h2>
+        <header class>
+            <div class="title">
+                <h1>WESTERN MEMORIES</h1>
             </div>
-            <ul class="cards-ul-container" id="card-list">
+        </header>
 
-                <li class="card" data-type="ace-black">
-                    <div class="view front-view">
-                        <img src="./assets/images/A-C.webp" alt="ace-black">
-                    </div>
-                </li>
-                <li class="card" data-type="queen-black">
-                    <div class="view front-view">
-                        <img src="./assets/images/Q-S.webp" alt="queen-black">
-                    </div>
-                </li>
-                <li class="card" data-type="jack-red">
-                    <div class="view front-view">
-                        <img src="./assets/images/J-D.webp" alt="jack-red">
-                    </div>
-                </li>
-                <li class="card" data-type="king-red">
-                    <div class="view front-view">
-                        <img src="./assets/images/K-D.webp" alt="king-red">
-                    </div>
-                </li>
-                <li class="card" data-type="jack-black">
-                    <div class="view front-view">
-                        <img src="./assets/images/J-C.webp" alt="jack-black">
-                    </div>
-                </li>
-                <li class="card" data-type="ace-red">
-                    <div class="view front-view">
-                        <img src="./assets/images/A-H.webp" alt="ace-red">
-                    </div>
-                </li>
-                <li class="card" data-type="king-black">
-                    <div class="view front-view">
-                        <img src="./assets/images/K-C.webp" alt="king-black">
-                    </div>
-                </li>
-                <li class="card" data-type="queen-black">
-                    <div class="view front-view">
-                        <img src="./assets/images/Q-C.webp" alt="queen-black">
-                    </div>
-                </li>
-                <li class="card" data-type="ace-red">
-                    <div class="view front-view">
-                        <img src="./assets/images/A-D.webp" alt="ace-red">
-                    </div>
-                </li>
-                <li class="card" data-type="queen-red">
-                    <div class="view front-view">
-                        <img src="./assets/images/Q-H.webp" alt="queen-red">
-                    </div>
-                </li>
-                <li class="card" data-type="jack-black">
-                    <div class="view front-view">
-                        <img src="./assets/images/J-S.webp" alt="jack-black">
-                    </div>
-                </li>
-                <li class="card" data-type="king-red">
-                    <div class="view front-view">
-                        <img src="./assets/images/K-H.webp" alt="king-red">
-                    </div>
-                </li>
-                <li class="card" data-type="king-black">
-                    <div class="view front-view">
-                        <img src="./assets/images/K-S.webp" alt="king-black">
-                    </div>
-                </li>
-                <li class="card" data-type="jack-red">
-                    <div class="view front-view">
-                        <img src="./assets/images/J-H.webp" alt="jack-red">
-                    </div>
-                </li>
-                <li class="card" data-type="queen-red">
-                    <div class="view front-view">
-                        <img src="./assets/images/Q-D.webp" alt="queen-red">
-                    </div>
-                </li>
-                <li class="card" data-type="ace-black">
-                    <div class="view front-view">
-                        <img src="./assets/images/A-S.webp" alt="ace-black">
-                    </div>
-                </li>
-            </ul>
+        <div class="button-styles">
+            <div>
+                <!-- Modal button -->
+                <button id="open-modal-btn">GAME INFO</button>
+
+                <button id="reset-button">RESET</button>
+                <button id="shuffle-start-button">Start</button>
+            </div>
+
+            <!-- Modal overlay with info how to play -->
+            <div id="overlay"></div>
+            <div id="modal">
+                <h2>MEMORY WITH CARDS</h2>
+                <br>
+                <p>This is an easy-to-play game for one player<br><br>
+                    Pair cards in RED or BLACK to add score<br><br>
+                    Click play to start countdown<br><br>
+                    Click reset and shuffle to start over<br><br>
+                </p>
+                <br>
+                <button id="close-modal-btn">CLOSE</button>
+            </div>
+            <br>
+
+            <!-- Timer -->
+            <div id="timer-div">
+                <h2 id="countdown-timer">TIME</h2>
+            </div>
         </div>
 
-    </section>
+        <!-- Game Board with Playing Card Images -->
 
-    <!-- Footer -->
+        <section class="gameboard">
 
-    <footer>
-        <div id="footer-info">
-            <h4>PAIR VALUES & COLOURS TO ADD SCORE</h4>
-        </div>
-    </footer>
+            <div class="card-wrapper" id="cardcontainer">
+                <div id="gameboard-heading">
+                    <h2>GAME BOARD</h2>
+                </div>
+                <ul class="cards-ul-container" id="card-list">
 
+                    <li class="card" data-type="ace-black">
+                        <div class="view front-view">
+                            <img src="./assets/images/A-C.webp" alt="ace-black">
+                        </div>
+                    </li>
+                    <li class="card" data-type="queen-black">
+                        <div class="view front-view">
+                            <img src="./assets/images/Q-S.webp" alt="queen-black">
+                        </div>
+                    </li>
+                    <li class="card" data-type="jack-red">
+                        <div class="view front-view">
+                            <img src="./assets/images/J-D.webp" alt="jack-red">
+                        </div>
+                    </li>
+                    <li class="card" data-type="king-red">
+                        <div class="view front-view">
+                            <img src="./assets/images/K-D.webp" alt="king-red">
+                        </div>
+                    </li>
+                    <li class="card" data-type="jack-black">
+                        <div class="view front-view">
+                            <img src="./assets/images/J-C.webp" alt="jack-black">
+                        </div>
+                    </li>
+                    <li class="card" data-type="ace-red">
+                        <div class="view front-view">
+                            <img src="./assets/images/A-H.webp" alt="ace-red">
+                        </div>
+                    </li>
+                    <li class="card" data-type="king-black">
+                        <div class="view front-view">
+                            <img src="./assets/images/K-C.webp" alt="king-black">
+                        </div>
+                    </li>
+                    <li class="card" data-type="queen-black">
+                        <div class="view front-view">
+                            <img src="./assets/images/Q-C.webp" alt="queen-black">
+                        </div>
+                    </li>
+                    <li class="card" data-type="ace-red">
+                        <div class="view front-view">
+                            <img src="./assets/images/A-D.webp" alt="ace-red">
+                        </div>
+                    </li>
+                    <li class="card" data-type="queen-red">
+                        <div class="view front-view">
+                            <img src="./assets/images/Q-H.webp" alt="queen-red">
+                        </div>
+                    </li>
+                    <li class="card" data-type="jack-black">
+                        <div class="view front-view">
+                            <img src="./assets/images/J-S.webp" alt="jack-black">
+                        </div>
+                    </li>
+                    <li class="card" data-type="king-red">
+                        <div class="view front-view">
+                            <img src="./assets/images/K-H.webp" alt="king-red">
+                        </div>
+                    </li>
+                    <li class="card" data-type="king-black">
+                        <div class="view front-view">
+                            <img src="./assets/images/K-S.webp" alt="king-black">
+                        </div>
+                    </li>
+                    <li class="card" data-type="jack-red">
+                        <div class="view front-view">
+                            <img src="./assets/images/J-H.webp" alt="jack-red">
+                        </div>
+                    </li>
+                    <li class="card" data-type="queen-red">
+                        <div class="view front-view">
+                            <img src="./assets/images/Q-D.webp" alt="queen-red">
+                        </div>
+                    </li>
+                    <li class="card" data-type="ace-black">
+                        <div class="view front-view">
+                            <img src="./assets/images/A-S.webp" alt="ace-black">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+
+        <footer>
+            <div id="footer-info">
+                <h4>PAIR VALUES & COLOURS TO ADD SCORE</h4>
+            </div>
+        </footer>
+    </main>
     <script src="assets/js/script.js"></script>
 </body>
 
