@@ -338,7 +338,6 @@ by Youtube channel Code Grind ('https: //www.youtube.com/watch?v=B6aJpbX_IZU')--
 }
 
 
-
 /* -- footer -- */
 
 footer {
@@ -346,6 +345,7 @@ footer {
     padding: 15px;
     text-align: center;
     background-color: rgb(82, 21, 152);
+    background: url("../images/footer_bkg_memory.webp") no-repeat center center/cover;
 
 }
 
