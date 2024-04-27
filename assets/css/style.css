@@ -4,10 +4,16 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: none;
-    margin-left: 0;
-    margin-right: 0;
 }
+
+/* -- body -- */
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+/* -- main -- */
 
 main {
     flex: 1 0 auto;
@@ -18,13 +24,14 @@ main {
 
 .header {
     display: flex;
-    justify-content: center;
     align-items: center;
     background-color: rgb(220, 202, 42);
-    font-size: large;
-    height: 100px;
-    font-family: "Rubik mono", sans-serif;
-    width: auto;
+    background: url("../images/memory_bkg_51120_500.webp") no-repeat center center/cover;
+    height: 10vh;
+    width: 100%;
+    z-index: 99;
+    overflow: hidden;
+    justify-content: center;
 }
 
 .title h1 {
@@ -35,7 +42,6 @@ main {
 
 .header>h1 {
     background-color: aliceblue;
-    color: rgb(82, 21, 152);
     height: auto;
     width: auto;
     padding: 10px;
@@ -134,6 +140,7 @@ main {
     margin-right: auto;
     text-align: center;
     width: auto;
+    background: url("../images/memory_bkg_small.webp") no-repeat center/cover;
 }
 
 #gameboard-heading {
