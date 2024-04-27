@@ -87,7 +87,7 @@ The game site will have a clean layout with every feature identifiable and inter
 
   ### **Wireframes**  
   
-The wireframes were created in Balsamiq.
+The wireframes were created in Figma.
 
 <details open>
 <summary>Wireframe - Desktop main window</summary>
@@ -215,7 +215,8 @@ Clicking the 'Reset' button, allows the player to start over with a shuffled gam
 - Git - used for version control
 - Google Fonts - fonts were imported from here 
 - Favicon - icon were edited and downloaded from here  
-- Adobe Color - for all color palettes and accessibility color testing  
+- Adobe Color - for all color palettes and accessibility color testing
+- Adobe Photoshop to compress and convert images to Webp format
 - Google Dev Tools - to debug and for testing responsiveness 
 - Google Lighthouse - for auditing the website
 - W3C Validator - for validating the HTML and CSS code 
@@ -294,6 +295,8 @@ The results of feature testing in <b>Chrome</b>, <b>Firefox</b>, <b>Edge</b> and
 
 ### **Bugs** 
 
+ - Fix double click shows matched pairs when card clicked twice - My Mentor Gareth Mc Girr.
+
 <br> 
 
 
@@ -350,21 +353,28 @@ The [W3C Validator](https://validator.w3.org/) was used to validate HTML and the
 
 ### **Content References**
 
-  - All content created is copyright-free resources and is intended for educational purposes.
+  ### All content created is copyright-free resources and is intended for educational purposes.
+
   - [Code Institute](https://codeinstitute.net/ie/) for their HTML/CSS/JavaScript learning material.
-  - [W3Schools](https://www.w3schools.com/) for additional learning material:
-      - Modal how to -  Dev...
-  - [xxx]() for JavaScript best-practise, tutorials and guidance.
-      - Fix double click shows matched pairs when card clicked twice - Mentor Gareth ...
-  - [Web ](https://) setup memory game with matching pairs tutorial.
-  - [P]() for help in creating function.
-  - [XX](https://) for inspiration and the idea of using an <ul> list of images to achieve the shuffle function in JavaScript.
+
+  - [W3Schools](https://www.w3schools.com/) for additional learning material overall.
+
+  - [Web Dev Simplified](https://www.youtube.com/WebDevSimplified) Youtube channel for coding tutorials and guidance.
+      - [javascript simplified](https://javascriptsimplified.com/) Web Dev Simplified learning javascript.
+      - [javascript simplified](https://javascriptsimplified.com/) Modal Walkthrough
+
+  - [Code Grind](https://www.youtube.com/@CodeGrind) setup memory game with matching pairs tutorial.
+
+  - [Distansakademin](https://www.youtube.com/watch?v=-2gG6WPhbC0&list=PLI5JF23TK_8D5p-MY4CvvpY7_zMUccsE8&index=1) 
+      - Swedish Youtube channel for web development and basics in HTML, CSSS and Javascript.
+
+  - [Coding Nepal](https://www.codingnepalweb.com/build-memory-card-game-html-javascript/) for inspiration and the idea of using an <ul> list of images to achieve the shuffle function in JavaScript.
 
 <br>
 
 ### **Media References**
 
-  - [PXX](https://www.pexels.com/), playing cards
+  - [ImKennyYip](https://github.com/ImKennyYip/black-jack), playing cards.
 
   - [Favicon](https://favicon.io/) for the favicon used for this site.
 
