@@ -1,18 +1,22 @@
 // Wait for the DOM to finish loading before running the game 
 document.addEventListener('DOMContentLoaded', function () {
 
-
     // Modal with game info
 
     const modal = document.querySelector("#modal")
-    const openModalButton = document.querySelector("#open-modal-btn")
     const closeModalButton = document.querySelector("#close-modal-btn")
     const overlay = document.querySelector("#overlay")
 
-    openModalButton.addEventListener("click", () => {
-        modal.classList.add("open")
-        overlay.classList.add("open")
-    })
+    // Add a mouse over event listener to the element that should open the modal
+    const modalTrigger = document.querySelector("#modal-trigger");
+    modalTrigger.addEventListener("mouseover", openModal);
+
+
+    function openModal() {
+        modal.classList.add("open");
+        overlay.classList.add("open");
+    }
+
     closeModalButton.addEventListener("click", closeModal)
     overlay.addEventListener("click", closeModal)
 
