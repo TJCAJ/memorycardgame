@@ -13,7 +13,7 @@ body {
     height: 100vh;
 }
 
-/* -- main -- */
+/* Main content styling */
 
 main {
     flex: 1 0 auto;
@@ -50,24 +50,33 @@ header {
     box-shadow: 0 2px 9px 0 rgba(11, 11, 21, .2);
 }
 
+.navbar {
+    display: flex;
+    background: url("../images/memory_headings_bkg.webp") no-repeat center center/cover;
+    padding: 2.5vh;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
 /* -- modal with game info -- */
 
 #modal {
     display: none;
     position: absolute;
-    align-content: center;
+    left: 48%;
     top: 50%;
-    left: 50%;
-    height: 400px;
+    width: 55vh;
     transform: translate(-50%, -50%);
-    border: 1px solid rgb(82, 21, 152);
-    padding: 1rem;
+    border: 2px solid #000000;
     border-radius: 6px;
-    background-color: rgb(220, 202, 42);
+    background-color: #0d4754;
     font-size: large;
-    padding: 10px;
     border-radius: 6px;
-    z-index: 3;
+    z-index: 95;
+    padding: 2vh;
+    text-transform: uppercase;
 }
 
 #overlay {
