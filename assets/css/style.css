@@ -60,6 +60,36 @@ header {
     text-align: center;
 }
 
+#reset-button,
+#countdown-timer,
+#shuffle-start-button {
+    font-family: "Rubik", sans-serif;
+    font-size: large;
+    padding: 10px;
+    border-radius: 6px;
+    color: black;
+    background-color: rgb(220, 202, 42);
+    box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
+    text-transform: uppercase;
+    width: auto;
+    margin: 10px;
+}
+
+#reset-button:hover,
+#shuffle-start-button:hover {
+    transform: scale(1.10);
+}
+
+#countdown-timer {
+    width: 120px;
+
+}
+
+#timer-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* -- modal with game info -- */
 
 #modal {
@@ -175,21 +205,20 @@ p {
 
 #gameboard-heading {
     justify-content: center;
-    align-items: center;
     height: auto;
-    padding: 5px;
+    padding: 10px;
     border-radius: 6px;
     font-family: "Rubik", sans-serif;
     font-size: large;
     background-color: aliceblue;
     box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
     text-transform: uppercase;
-    width: 250px;
+    width: auto;
     margin: 75px;
 }
 
 
-/* test with grid container --*/
+/* Cards --*/
 
 .card-wrapper {
     margin-top: 50px;
@@ -310,50 +339,6 @@ by Youtube channel Code Grind ('https: //www.youtube.com/watch?v=B6aJpbX_IZU')--
     100% {
         transform: translate(1px, -2px) rotate(-1deg);
     }
-}
-
-/* -- game score and reset section -- */
-
-#reset-button,
-#countdown-timer,
-#shuffle-start-button {
-    font-family: "Rubik", sans-serif;
-    font-size: large;
-    padding: 10px;
-    border-radius: 6px;
-    color: black;
-    background-color: rgb(220, 202, 42);
-    box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
-    text-transform: uppercase;
-    width: auto;
-    margin: 10px;
-}
-
-#reset-button:hover,
-#shuffle-start-button:hover {
-    transform: scale(1.10);
-}
-
-#countdown-timer {
-    width: 120px;
-
-}
-
-#timer-div {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.button-styles {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    background: url("../images/memory_headings_bkg.webp") no-repeat center center/cover;
-    padding: 2.5vh;
 }
 
 
