@@ -79,32 +79,35 @@ header {
     text-transform: uppercase;
 }
 
+#modal>h2,
+p {
+    color: white;
+    font-size: 30px;
+    font-family: "Rubik", sans-serif;
+}
+
+#modal-trigger {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #overlay {
     display: none;
     position: absolute;
-    top: 5%;
-    left: 5%;
-    right: 5%;
-    bottom: 5%;
-    background-color: rgb(192, 175, 207);
+    align-content: center;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    background-image: url("../images/modal_overlay_bkg_desert.webp");
+    /*background-color: #0d4754;*/
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 6px;
-    opacity: 75%;
-    border: 2px solid rgb(82, 21, 152);
-    z-index: 2;
-}
-
-#start-the-game-section {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    padding: 10px;
-    padding-top: 30px;
-    border-radius: 6px;
-    background-color: rgb(220, 202, 42);
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: "Rubik mono", sans-serif;
+    border: 10px;
+    z-index: 94;
+    opacity: 0.9;
 }
 
 #open-modal-btn {
@@ -113,7 +116,7 @@ header {
     box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
     font-family: "Rubik", sans-serif;
     font-size: large;
-    border: 2px solid rgb(82, 21, 152);
+    border: 2px solid #0d4754;
     background-color: rgb(220, 202, 42);
 }
 
@@ -127,11 +130,11 @@ header {
 }
 
 #close-modal-btn {
-    padding: 15px;
+    padding: 25px;
     border-radius: 6px;
     box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
     font-family: "Rubik", sans-serif;
-    font-size: large;
+    font-size: 25px;
     border: 2px solid rgb(82, 21, 152);
 }
 
