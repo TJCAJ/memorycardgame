@@ -168,7 +168,6 @@ main {
     padding-left: 45px;
     padding-right: 45px;
     padding-bottom: 45px;
-    background-image: url("../images/bkg_green.jpg");
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     width: auto;
@@ -185,12 +184,12 @@ main {
 }
 
 .card {
-    height: 120px;
+    height: 124px;
     width: 90px;
-    /*background-color: azure;*/
-    background-image: url("../images/BACK.webp");
+    background-color: azure;
+    background-image: url("../images/card_back_zig_zag.webp");
     background-position-x: center;
-    background-position-y: -0.3vh;
+    background-position-y: -0.2vh;
     background-size: 96%;
     border-radius: 6px;
     display: grid;
@@ -202,7 +201,7 @@ main {
 
 .card img {
     width: 98%;
-    max-height: 119px;
+    max-height: 120px;
     transition: 0.3s all ease;
     opacity: 0;
     padding: 3px 3px 3px 3px;
