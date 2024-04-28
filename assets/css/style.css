@@ -104,9 +104,10 @@ header {
 #modal {
     display: none;
     position: absolute;
-    left: 48%;
+    left: 50%;
     top: 50%;
-    width: 55vh;
+    width: 800px;
+    height: 500px;
     transform: translate(-50%, -50%);
     border: 2px solid #000000;
     border-radius: 6px;
@@ -115,12 +116,20 @@ header {
     z-index: 95;
     padding: 2vh;
     text-transform: uppercase;
+    text-align: justify;
 }
 
-#modal>h2,
-p {
-    color: white;
+#modal li {
+    margin-left: 15px;
+    color: rgb(220, 202, 42);
     font-size: 30px;
+    font-family: "Rubik", sans-serif;
+    text-align: justify;
+}
+
+#modal h2 {
+    color: aliceblue;
+    font-size: 35px;
     font-family: "Rubik", sans-serif;
 }
 
@@ -547,12 +556,48 @@ footer h4 {
         justify-content: space-evenly;
     }
 
+    /* -- modal with game info -- */
+
+    #modal {
+        display: none;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 580px;
+        height: 480px;
+        padding: 2vh;
+        text-transform: uppercase;
+        text-align: justify;
+    }
+
+    #overlay {
+        display: none;
+        opacity: 0;
+    }
+
+    #modal li {
+        margin-left: 15px;
+        color: rgb(220, 202, 42);
+        font-size: 21px;
+        font-family: "Rubik", sans-serif;
+        text-align: justify;
+    }
+
+    #modal h2 {
+        color: aliceblue;
+        font-size: 35px;
+        font-family: "Rubik", sans-serif;
+    }
+
     /* Media query - tablets and larger devices (max 1200px) */
     @media (max-width:1200px) {
+
         #gameOverModal {
             width: 900px;
             height: 850px;
         }
 
+
     }
+
 }
