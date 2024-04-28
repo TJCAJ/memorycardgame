@@ -492,51 +492,31 @@ footer h4 {
         overflow-x: hidden;
     }
 
-
-    /* -- modal with game info -- */
-
     #modal {
-        display: none;
-        align-items: center;
-        width: 30vh;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #modal>h2,
-    p {
-        color: white;
-        font-size: 20px;
-        font-family: "Rubik", sans-serif;
-    }
-
-    #modal-trigger {
-        width: auto;
-        margin-left: auto;
-        margin-right: auto;
-        align-items: center;
-        justify-content: center;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-self: center;
+        align-content: center;
+        width: 300px;
     }
 
     #overlay {
         display: none;
+        opacity: 0;
+
     }
 
-    #close-modal-btn {
-        padding: 25px;
-        border-radius: 6px;
-        box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
+    #modal li {
+        margin-left: 15px;
+        color: rgb(220, 202, 42);
+        font-size: 18px;
         font-family: "Rubik", sans-serif;
-        font-size: 25px;
-        border: 2px solid rgb(82, 21, 152);
+        text-align: center;
     }
-
-    #close-modal-btn:hover {
-        transform: scale(1.20);
-    }
-
 }
+
 
 /* Media query - tablets and larger devices (max 900px) */
 @media (max-width:900px) {
@@ -554,20 +534,6 @@ footer h4 {
     #timer-div {
         display: flex;
         justify-content: space-evenly;
-    }
-
-    /* -- modal with game info -- */
-
-    #modal {
-        display: none;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        width: 580px;
-        height: 480px;
-        padding: 2vh;
-        text-transform: uppercase;
-        text-align: justify;
     }
 
     #overlay {
@@ -590,14 +556,12 @@ footer h4 {
     }
 
     /* Media query - tablets and larger devices (max 1200px) */
-    @media (max-width:1200px) {
+    @media (mmax-width:1200px) {
 
         #gameOverModal {
             width: 900px;
             height: 850px;
         }
 
-
     }
-
 }
