@@ -10,7 +10,8 @@
 
 body {
     display: flex;
-    height: 100vh;
+    height: auto;
+    overflow-x: hidden;
 }
 
 /* Main content styling */
@@ -145,25 +146,6 @@ p {
     border: 10px;
     z-index: 94;
     opacity: 0.9;
-}
-
-#open-modal-btn {
-    padding: 10px;
-    border-radius: 6px;
-    box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
-    font-family: "Rubik", sans-serif;
-    font-size: large;
-    border: 2px solid #0d4754;
-    background-color: rgb(220, 202, 42);
-}
-
-#open-modal-btn>h2 {
-    background-color: aliceblue;
-    border: 2px solid rgb(82, 21, 152);
-}
-
-#open-modal-btn:hover {
-    transform: scale(1.10);
 }
 
 #close-modal-btn {
@@ -444,15 +426,23 @@ footer h4 {
         overflow-x: hidden;
     }
 
+    header {
+        display: flex;
+        align-items: center;
+        height: 15vh;
+    }
 
-    .header>h1 {
+    header>h1 {
         box-sizing: border-box;
+        height: 30px;
+        width: auto;
+
     }
 
     .cards-ul-container {
         display: grid;
-        grid-template-columns: repeat(2, 2fr);
-        grid-gap: 2em;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1em;
         cursor: pointer;
         perspective: 1000px;
         height: calc(100% / 4 - 10px);
@@ -477,12 +467,13 @@ footer h4 {
     }
 
     .card {
-        height: 17vh;
-        width: 12vh;
+        height: 15vh;
+        width: 10vh;
     }
 
     .card-wrapper {
-        padding: 25px;
+        align-items: center;
+        padding: 20px;
         border-radius: 10px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         width: auto;
@@ -493,6 +484,7 @@ footer h4 {
         margin-bottom: auto;
         height: auto;
         width: auto;
+        overflow-x: hidden;
     }
 
 }
