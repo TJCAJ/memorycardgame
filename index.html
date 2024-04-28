@@ -40,13 +40,13 @@
     <main>
         <!-- Header -->
 
-        <header class>
+        <header class role="img" aria-label="a desert landscape with a tournado swirling">
             <div class="title">
                 <h1>WESTERN MEMORIES</h1>
             </div>
         </header>
 
-        <div class="navbar">
+        <div class="navbar" role="img" aria-label="four playing cards on a game table cloth">
             <!-- Modal button -->
             <!--    <button id="open-modal-btn">GAME INFO</button> -->
             <div>
@@ -61,13 +61,15 @@
 
         <!-- Game Board with Playing Card Images -->
 
-        <section class="gameboard">
+        <section class="gameboard" role="img"
+            aria-label="a lonesome cowboy sitting in a saloon at a gambling table looking at playing cards">
 
             <div class="card-wrapper" id="cardcontainer">
                 <div>
                     <div id="modal-trigger">
                         <!-- Modal overlay with info how to play -->
-                        <div id="overlay"></div>
+                        <div id="overlay" role="img"
+                            aria-label="a desert landscape with a cowboy riding towards sunset"></div>
                         <h3>INFO & RULES</h3>
                         <div id="modal">
                             <h2>HOW TO PLAY</h2>
@@ -187,7 +189,8 @@
 
         <div id="gameOverModal" style="display:none;">
             <!--<div id="gameover-overlay"></div> -->
-            <div class="game-over-content">
+            <div class="game-over-content" role="img"
+                aria-label="a lonesome cowboy siluette on a dark street with pouring rain">
                 <h2>GAME OVER!</h2><br>
                 <p>You couldn't help the lonesome Cowboy to remember the cards!<br>Now he must duel
                     to clear his losses at the gaming table.</p>

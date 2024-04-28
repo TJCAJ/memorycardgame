@@ -1,8 +1,8 @@
-# Memory with cards
+# WESTERN MEMORIES
 
 [View live project here on Github Pages]()
 
-Memory with cards is a matching card game built with HTML, CSS, and JavaScript. The aim of the game is to enjoy playing with a deck of playing cards in a non-competitive, relaxed environment where goal is to match as many pairs as you can withinn a specified time-frame with the same value and colour in RED or BLACK. Hence _Diamonds_ and _Hearts_ are considered matching pairs, as well as _Clover_ and _Spades_. This is my first JavaScript project built for the Code Institute's Full Stack Software Development course.
+WESTERN MEMORIES is a fun matching card game built with HTML, CSS, and JavaScript. The aim of the game is to enjoy playing with a deck of playing cards in a non-competitive, relaxed environment where goal is to match as many pairs as you can withinn a specified time-frame with the same value and colour in RED or BLACK. Hence _Diamonds_ and _Hearts_ are considered matching pairs, as well as _Clover_ and _Spades_. This is my first JavaScript project built for the Code Institute's Full Stack Software Development course.
 
 <br>
 
@@ -32,11 +32,11 @@ Memory with cards is a matching card game built with HTML, CSS, and JavaScript. 
 
 ### **Primary Goal**
 
-Memory with cards is an online memory card game styled with a clean and user friendly design. It is suitable for all ages. The game aims to provide a relaxed, memory-enhancing experience.
+WESTERN MEMORIES is an online memory card game styled in a classic western theme with a clean but visually interesting and user friendly design. It is suitable for all ages. The game aims to provide a relaxed, memory-enhancing experience and test your memory ability under time pressure.
 
 ### **User/Visitor Goals**
 
-Memory with cards has been designed to be easily accessible and fun for all ages. It is a grid-style card game where the user is expected to flip as many matching cards as possible and keep them locked before the time is up. This is testing the users memory skills. Design and styling will be responsive to different media screen sizes. A preset timer iniates a counter as the user press the start button. When the time is up a message of "Time up" is displayed for the user.
+WESTERN MEMORIES has been designed to be easily accessible and fun for all ages. It is a grid-style card game where the user is expected to flip as many matching cards as possible and keep them locked before the time is up. This is testing the users memory skills. Design and styling is responsive to different media screen sizes. A preset timer iniates a counter as the user press the start button. When the time is up a message of _"Time up"_ is displayed for the user.
 
 ### **First-Time User/Visitor**
 
@@ -48,7 +48,7 @@ Memory with cards has been designed to be easily accessible and fun for all ages
 ### **Returning User/Visitor**
 
   - As a returning user, I want to be able to set up the gameboard in diferent levels; _Easy_, _Medium_ or _Hard_.
-  - As a returning user, I want to be able to configure my game with at least three different amount of cards; 16, 36 and 52.
+  - As a returning user, I want to be able to configure my game with at least three different amount of cards; 16, 24 and 36.
   - As a returning visitor, I want to be able to play the game on different devices.
   - As a returning visitor, I want to be able to reset the game screen quickly if I share it with another user for their try.
   
@@ -62,8 +62,7 @@ Memory with cards has been designed to be easily accessible and fun for all ages
 
 My goal was to build an interactive, memory game suitable for all ages. I wished to use a deck of cards to set up an easy and familiar styling of the game. The theme is also to some extent a follow-up to my previous PP1 project in mind, where created website for a poker club. I would like to see this as continuation and learn how to create various games adapted for such a website.
 
-  - The user will are able to familiarise themselves with the game rules before setting up the gameboard with various levels and time frames. 
-  - The user can develop their memory skills by advancing in levels and shorter time intervalls. 
+  - The user will able to familiarise themselves with the game rules before starting tto play. 
 
 ### **2. Scope**
 
@@ -79,10 +78,10 @@ The game must be responsive and playable on mobile, tablet, and desktop-sized de
 
 The game site will have a clean layout with every feature identifiable and interactive.
 
-  - On loading, the page display the easiest level of the gameboard with 16 cards already shuffled. A preset timer will automatically begin to count as the start game button is clicked. A responisve modal or menu will also offer optional settings. 
+  - On loading, the page display the gameboard with 16 cards already shuffled. A preset timer of 60 seconds will automatically begin to count as the start game button is clicked.
   - The gameboard is situated in the center of the screen with the size of 4x4 gamecards displayed.
   - _Timer/counter_ are located above the gameboard to the right for larger screens and on top for smaller screens.
-  - A _Reset_ button is located to the left, nest to the modal and and _Game Info_ button.
+  - A _Reset_ button is located to the left, next to the _Start_ button.
   - A message of "TIME UP" is displayed where the Timer is also displayed. 
 
   ### **Wireframes**  
@@ -170,7 +169,7 @@ Adobe Color Accessibility Tools was used to check for colour blind safeness in t
 ### **1. Game Board**
 ![screenshot of game board](../memorycardgame/assets/docs/images/screenshot__gameboard.png)  
 
-The gameboard greets the user when the page first loads. It is a 4x4 grid-style gameboard. A classic red card pattern decorates the back of the cards. Cards are flipped, one at a time, revealing original card values with jack, queen, king and aces. Matched cards stay facing up witha green border to indicate success. Unmatched cards shake briefly with a red border and flip back over. A 'Reset' button is present to reset the game experience for the current player or set it up for a new player.
+The gameboard greets the user when the page first loads. It is a 4x4 grid-style gameboard. A classic yellow and blue card pattern decorates the back of the cards. Cards are flipped, one at a time, revealing original card values with jack, queen, king and aces. Matched cards stay facing up witha green border to indicate success. Unmatched cards shake briefly with a red border and flip back over. A 'Reset' button is present to reset the game experience for the current player or set it up for a new player.
 
 <br>
 
@@ -186,17 +185,20 @@ This modal is integrated in the Header as a menu option and details the game rul
 ![screenshot of timer count](../memorycardgame/assets/docs/images/screenshot_timer_count.png)
 ![screenshot of message time up](../memorycardgame/assets/docs/images/screenshot_time_up.png)
 
-The timer starts when the user click on the "Start" button and works as a reversed countdown. As it reaches the end of the preset time intervall it displays that the time is up. This is to allow the player to choose whether they wish to play again and try to beat their recent score.
+The timer starts when the user click on the "Start" button and works as a reversed countdown. As it reaches the end of the preset time intervall it displays that the time is up. A game over modal also display a message that; _"You couldn't help the lonesome Cowboy to remember the cards! Now he must duel to clear his losses at the gaming table!"_ This is to motivate the player to play again.
 
-Clicking the 'Reset' button, allows the player to start over with a shuffled gameboard, reset the timer and moves counter back to zero indicated in the display with "Time".
+Clicking the _Reset_ button, allows the player to start over and reset the timer indicated in the display with _"Time"_. The _Start_ button automatically shuffles the cards on the gameboard, 
 
 <br>
 
 ## Future Features
 
-- As mentioned earlier, I wish to include extra features and options. For this I want to add the option to change level and try an easier or a more difficult version, with various time intervalls and adding more cards to the gameboard with options of 16, 36 and 52 cards. This will improve the gaming experience as it gives the user more ways to challenge his/her memory skills. But this was beyond the scope of this version and will be included in the next version.
+- As mentioned earlier, I wish to include extra features and options. For this I want to add the option to change level and try an easier or a more difficult version, with various time intervalls and adding more cards to the gameboard with options of 16, 24 and 36 cards. This will improve the gaming experience as it gives the user more ways to challenge his/her memory skills. But this was beyond the scope of this version and will be included in the next version.
+
+- I would also like to add setting up the gameboard with various levels and time frames. This will allow the user to develop their memory skills by advancing in levels and improve with shorter time intervalls. A responisve modal or menu can offer optional settings. 
 
 - In addition, I would also like to add the feature for all players with an option to enter "player's name" to personalise the gameboard. As well as to include a scoreboard with at leas the top five results by the players' names entered. This will appeal to the more competitive players and enhance the gaming experience. 
+
 
 ---  
 
@@ -214,7 +216,9 @@ Clicking the 'Reset' button, allows the player to start over with a shuffled gam
 - GitHub - used to save and store all files for this website  
 - Git - used for version control
 - Google Fonts - fonts were imported from here 
-- Favicon - icon were edited and downloaded from here  
+- Favicon - icon were edited and downloaded from here 
+- magicpattern.design - to create new pattern on playing card back view
+- freepik.com - to generate images with text for the overall visual impression of the western theme
 - Adobe Color - for all color palettes and accessibility color testing
 - Adobe Photoshop to compress and convert images to Webp format
 - Google Dev Tools - to debug and for testing responsiveness 
@@ -269,7 +273,7 @@ To make a copy of this GitHub repository that allows you to view the content and
   
 ### **Initial tests**  
   
-The primary goal for this project was for me to learn the basis of Javascript and to create a responsive game web application that delivers a positive experience for the user. I have used Chrome Dev Tools to test the game. Using the console and JSHint to debug JavaScript was new to me, but will surely be something that I will continue to use. I choosed to deploy my page late in the development process this time, to ensure that I had the ability to understand javascript better and could test my skills first, without having to commit all the time while I was still very much in a learning curve. This is why I have commits with some larger chunks of code in the beginning of the build, that I used from a locally stored version on my computer.
+The primary goal for this project was for me to learn the basis of Javascript and to create a responsive game web application that delivers a positive experience for the user. I have used Chrome Dev Tools to test the game. Using the console and JSHint to debug JavaScript was new to me, but will surely be something that I will continue to use. I choosed to deploy my page late in the development process this time, to ensure that I had the ability to understand javascript better and could test my skills first, without having to commit all the time while I was still very much in a learning curve. This is why I have commits with some larger chunks of code in the beginning of the build, that I used from a locally stored version on my computer. I will also most likely continue to work locally first and develop my next projects before setting up new repositorys on Github.
   
 - Macbook Pro (5120 X 2880)  
 - LG HDR 4K" Monitor (3840x2160)
@@ -307,21 +311,21 @@ The [W3C Validator](https://validator.w3.org/) was used to validate HTML and the
 <details>
 <summary>W3C HTML Validation - no errors or warnings to show </summary>
 
-![html w3c validation](docs/validation/html)
+![html w3c validation](./assets/docs/images/wc3_html_validated.png)
 </details>  
 
 
 <details>
 <summary>W3C Jigsaw CSS Validation - no errors found</summary>
 
-![css w3c validation](docs/validation/css)
+![css w3c validation](./assets/docs/images/wc3_css_validated.png)
 </details>  
 
 
 <details>
 <summary>JSHint for JavaScript validation - no errors found. </summary>
 
-![JSHint for JavaScript validation](docs/validation/jshint)
+![JSHint for JavaScript validation](./assets/docs/images/jshint_check.png)
 </details>  
 
 
