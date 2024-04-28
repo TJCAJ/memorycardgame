@@ -1,12 +1,12 @@
 # WESTERN MEMORIES
 
-[View live project here on Github Pages]()
+[View live project here on Github Pages](../assets/docs/images/mockup_western_memories.webp)
 
 WESTERN MEMORIES is a fun matching card game built with HTML, CSS, and JavaScript. The aim of the game is to enjoy playing with a deck of playing cards in a non-competitive, relaxed environment where goal is to match as many pairs as you can withinn a specified time-frame with the same value and colour in RED or BLACK. Hence _Diamonds_ and _Hearts_ are considered matching pairs, as well as _Clover_ and _Spades_. This is my first JavaScript project built for the Code Institute's Full Stack Software Development course.
 
 <br>
 
-![screenshot of webpage on various media devices]()
+![screenshot of webpage on various media devices](./assets/docs/images/mockup_western_memories.webp)
 
 * [UXD (User Experience Design)](#user-experience-ux)
   * [User Stories](#user-stories) 
