@@ -198,9 +198,9 @@ Clicking the _Reset_ button, allows the player to start over and reset the timer
 
 - As mentioned earlier, I wish to include extra features and options. For this I want to add the option to change level and try an easier or a more difficult version, with various time intervalls and adding more cards to the gameboard with options of 16, 24 and 36 cards. This will improve the gaming experience as it gives the user more ways to challenge his/her memory skills. But this was beyond the scope of this version and will be included in the next version.
 
-- I would also like to add setting up the gameboard with various levels and time frames. This will allow the user to develop their memory skills by advancing in levels and improve with shorter time intervalls. A responisve modal or menu can offer optional settings. 
+- I would also like to add setting up the gameboard with various levels and time frames. This will allow the user to develop their memory skills by advancing in levels and improve with shorter time intervalls. A responsivee modal or menu can offer optional settings. 
 
-- In addition, I would also like to add the feature for all players with an option to enter "player's name" to personalise the gameboard. As well as to include a scoreboard with at leas the top five results by the players' names entered. This will appeal to the more competitive players and enhance the gaming experience. 
+- In addition, I would also like to add the feature for all players with an option to enter "player's name" to personalise the gameboard. As well as to include a scoreboard with the top five results by the players' names entered. This will appeal to the more competitive players and enhance the gaming experience. 
 
 
 ---  
