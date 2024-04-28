@@ -101,15 +101,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.getElementById("shuffle-start-button").addEventListener("click", function () {
         shuffleCards();
-        startTimer();
     });
+
+    const list = document.getElementsByTagName("UL")[0];
+    const listCards = list.getElementsByTagName("li");
+
+    for (let i = 0; i < listCards.length; i++) {
+        listCards[i].addEventListener("click", function () {
+            startTimer();
+        });
+    }
+
 
     document.getElementById("reset-button").addEventListener("click", reloadPage);
     // Add function to shuffle cards
-
-    document.getElementById('shuffle-start-button').addEventListener('click', function () {
-        shuffleCards();
-    });
 
     function shuffleCards() {
         const cardlist = document.getElementById('card-list');
@@ -137,4 +142,4 @@ document.addEventListener('DOMContentLoaded', function () {
         location.reload();
     }
 
-});
+})
