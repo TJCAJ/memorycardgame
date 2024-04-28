@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Modal with game info
 
-    const modal = document.querySelector("#modal")
-    const closeModalButton = document.querySelector("#close-modal-btn")
-    const overlay = document.querySelector("#overlay")
+    const modal = document.querySelector("#modal");
+    const closeModalButton = document.querySelector("#close-modal-btn");
+    const overlay = document.querySelector("#overlay");
 
     // Add a mouse over event listener to the element that should open the modal
     const modalTrigger = document.querySelector("#modal-trigger");
@@ -17,12 +17,12 @@ document.addEventListener('DOMContentLoaded', function () {
         overlay.classList.add("open");
     }
 
-    closeModalButton.addEventListener("click", closeModal)
-    overlay.addEventListener("click", closeModal)
+    closeModalButton.addEventListener("click", closeModal);
+    overlay.addEventListener("click", closeModal);
 
     function closeModal() {
-        modal.classList.remove("open")
-        overlay.classList.remove("open")
+        modal.classList.remove("open");
+        overlay.classList.remove("open");
     }
 
 
@@ -137,4 +137,4 @@ document.addEventListener('DOMContentLoaded', function () {
         location.reload();
     }
 
-})
+});
