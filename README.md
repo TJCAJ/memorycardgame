@@ -91,12 +91,12 @@ The wireframes were created in Figma.
 <details open>
 <summary>Wireframe - Desktop main window</summary>
 
-![main desktop window wireframe](../memorycardgame/assets/docs/images/main_desktop_wireframe.png)
+![main desktop window wireframe](./assets/docs/images/main_desktop_wireframe.png)
 </details>
 <details open>
 <summary>Wireframe - Desktop Game Info modal window</summary>
 
-![desktop game info modal wireframe](../memorycardgame/assets/docs/images/main_desktop_with-game_info_modal.png)
+![desktop game info modal wireframe](./assets/docs/images/main_desktop_with-game_info_modal.png)
 </details>
 <details>
 <summary>Wireframe - Desktop Win modal window</summary>
@@ -133,7 +133,7 @@ The wireframes were created in Figma.
 
 I used my own preferences to to select colours with clean and distinctive colours in order to to create the gameboard palette with clear contrasts and a user friendly experience.
 
-![gameboard colour palette swatch](../memorycardgame/assets/docs/images/%20accessability_western_memories.webp)
+![gameboard colour palette swatch](./assets/docs/images/%20accessability_western_memories.webp)
 _Colour palette for the gameboard_
 
 <br>
@@ -142,14 +142,14 @@ _Colour palette for the gameboard_
 
 I chose the serif font 'Rubik' from [Google Fonts](https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap) i find the the font clean and easy to read, therefore it is used throughout the project.
 
-![screenshot of google font inknut example](../memorycardgame/assets/docs/images/screenshot_google_fonts.png)
+![screenshot of google font inknut example](./assets/docs/images/screenshot_google_fonts.png)
 
 ### **Imagery**
 
 I wished to use a wellknown and a familiar card style. After som research I gathered a selection of copyright-free images used in a previous PP2 project by Chris Watton that I found via Slack and a peer-code-review. This is a repository by the developer [ImKennyYip](https://github.com/ImKennyYip/black-jack). That is originally a tutorial for a Blackjack card game.
 
-![selection of cards front](../memorycardgame/assets/docs/images/front_card_ex.webp)
-![selection of cards back](../memorycardgame/assets/docs/images/card_bkg_yellow_blue.webp)
+![selection of cards front](./assets/docs/images/front_card_ex.webp)
+![selection of cards back](./assets/docs/images/card_bkg_yellow_blue.webp)
 
 <br>
 
@@ -157,11 +157,11 @@ I wished to use a wellknown and a familiar card style. After som research I gath
 
 Adobe Color Accessibility Tools was used to check for colour blind safeness in the colour palette. High Contrast levelswere important to achieve.
 
-![adobe color colour blind checker for main](../memorycardgame/assets/docs/images/%20accessability_ok_colourblind_western_memories.webp)
+![adobe color colour blind checker for main](./assets/docs/images/%20accessability_ok_colourblind_western_memories.webp)
 
-![adobe color contrast accessability ](../memorycardgame/assets/docs/images/%20accessability_contrast_western_memories.webp)
+![adobe color contrast accessability ](./assets/docs/images/%20accessability_contrast_western_memories.webp)
 
-![adobe color gradient accessability ](../memorycardgame/assets/docs/images/%20accessability_gradient_western_memories.webp)
+![adobe color gradient accessability ](./assets/docs/images/%20accessability_gradient_western_memories.webp)
 
 
 ---
@@ -169,24 +169,24 @@ Adobe Color Accessibility Tools was used to check for colour blind safeness in t
 ## Website Features
 
 ### **1. Game Board**
-![screenshot of game board](../memorycardgame/assets/docs/images/screenshot_gameboard.png)  
+![screenshot of game board](./assets/docs/images/screenshot_gameboard.png)  
 
 The gameboard greets the user when the page first loads. It is a 4x4 grid-style gameboard. A classic yellow and blue card pattern decorates the back of the cards. Cards are flipped, one at a time, revealing original card values with jack, queen, king and aces. Matched cards stay facing up witha green border to indicate success. Unmatched cards shake briefly with a red border and flip back over. A 'Reset' button is present to reset the game experience for the current player or set it up for a new player.
 
 <br>
 
 ### **2. Game Info Modal** 
-![screenshot of game info modal](../memorycardgame/assets/docs/images/screenshot_of_game_info_modal.png)  
+![screenshot of game info modal](./assets/docs/images/screenshot_of_game_info_modal.png)  
 
 This modal is integrated in the Header as a menu option and details the game rules. Pressing the 'Close' button takes te player back to the gameboard.
 
 <br>
   
 ### **3. Timer**
-![screenshot of start button and timer](../memorycardgame/assets/docs/images/screenshot_start_time.png)
-![screenshot of timer count](../memorycardgame/assets/docs/images/screenshot_timer_count.png)
-![screenshot of message time up](../memorycardgame/assets/docs/images/screenshot_of_time_up.png)
-![screenshot of game over modal](../memorycardgame/assets/docs/images/screenshot_of_game_over_modal.png)
+![screenshot of start button and timer](./assets/docs/images/screenshot_start_time.png)
+![screenshot of timer count](./assets/docs/images/screenshot_timer_count.png)
+![screenshot of message time up](./assets/docs/images/screenshot_of_time_up.png)
+![screenshot of game over modal](./assets/docs/images/screenshot_of_game_over_modal.png)
 
 The timer starts when the user click on the "Start" button and works as a reversed countdown. As it reaches the end of the preset time intervall it displays that the time is up. A game over modal also display a message that; _"You couldn't help the lonesome Cowboy to remember the cards! Now he must duel to clear his losses at the gaming table!"_ This is to motivate the player to play again.
 
