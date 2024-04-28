@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
         timer = setInterval(function () {
             count++;
             updateTimer();
-            if (count >= 60) {
+            if (count >= 2) {
                 clearInterval(timer);
                 document.getElementById("countdown-timer").textContent = "TIME UP";
                 gameOver();
@@ -142,4 +142,4 @@ document.addEventListener('DOMContentLoaded', function () {
         location.reload();
     }
 
-})
+});
