@@ -36,7 +36,7 @@ header {
 
 .title h1 {
     color: #0d4754;
-    font-size: 2.5em;
+    font-size: 2em;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
     text-decoration: double;
     font: bold;
@@ -514,4 +514,12 @@ footer h4 {
         display: flex;
         justify-content: space-evenly;
     }
-}
+
+    /* Media query - tablets and larger devices (max 1200px) */
+    @media (max-width:1200px) {
+        #gameOverModal {
+            width: 900px;
+            height: 850px;
+        }
+
+    }
