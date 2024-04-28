@@ -430,13 +430,13 @@ footer h4 {
         display: flex;
         align-items: center;
         height: 15vh;
+        width: auto;
     }
 
     header>h1 {
         box-sizing: border-box;
         height: 30px;
         width: auto;
-
     }
 
     .cards-ul-container {
@@ -466,17 +466,13 @@ footer h4 {
         font-size: 20px;
     }
 
-    .card {
-        height: 15vh;
-        width: 10vh;
-    }
-
     .card-wrapper {
         align-items: center;
-        padding: 20px;
+        padding: 10px;
         border-radius: 10px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         width: auto;
+        margin-top: auto;
     }
 
     .gameboard {
@@ -485,6 +481,50 @@ footer h4 {
         height: auto;
         width: auto;
         overflow-x: hidden;
+    }
+
+
+    /* -- modal with game info -- */
+
+    #modal {
+        display: none;
+        align-items: center;
+        width: 30vh;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #modal>h2,
+    p {
+        color: white;
+        font-size: 20px;
+        font-family: "Rubik", sans-serif;
+    }
+
+    #modal-trigger {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #overlay {
+        display: none;
+    }
+
+    #close-modal-btn {
+        padding: 25px;
+        border-radius: 6px;
+        box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
+        font-family: "Rubik", sans-serif;
+        font-size: 25px;
+        border: 2px solid rgb(82, 21, 152);
+    }
+
+    #close-modal-btn:hover {
+        transform: scale(1.20);
     }
 
 }
