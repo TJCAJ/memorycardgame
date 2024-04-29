@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
         finalScore.textContent = `Score: ${score}`;
     }
 
-    // Show the allcards modal
+    // Show the allcards modal  - DOESN'T WORK YET--------------------------------------------------
     function showCardsModal() {
         allCardsModal.style.display = "block";
         allCardsModalText = "Great You saved the Cowboy from a duel!";
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
         card.addEventListener("click", () => {
             //
             if (cardsMatched === totalMatchedPairs) {
-                return; //This should stop the event listener if all  are matched
+                return; //This should stop the event listener if all CARDS are matched  - DOESN'T WORK YET--------------------------------------------------
             }
             card.classList.add("clicked");
 
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         showCardsModal();
                         //
                         //
-                        // Stop the time if all cards are matched in time - DOESN'T WORK--------------------------------------------------
+                        // Stop the time if all cards are matched in time - DOESN'T WORK YET--------------------------------------------------
                         clearInterval(timer);
                         document.getElementById("countdown-timer").textContent = "Well done!";
                     }
