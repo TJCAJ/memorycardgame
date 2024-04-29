@@ -296,21 +296,21 @@ The [W3C Validator](https://validator.w3.org/) was used to validate HTML and the
 <details>
 <summary>W3C HTML Validation - no errors or warnings to show </summary>
 
-![html w3c validation](./assets/docs/images/wc3_html_validated.png)
+![html w3c validation](./assets/docs/images/html_jigsaw_validated.webp)
 </details>  
 
 
 <details>
 <summary>W3C Jigsaw CSS Validation - no errors found</summary>
 
-![css w3c validation](./assets/docs/images/wc3_css_validated.png)
+![css w3c validation](./assets/docs/images/css_jigsaw_validated.webp)
 </details>  
 
 
 <details>
 <summary>JSHint for JavaScript validation - no errors found. </summary>
 
-![JSHint for JavaScript validation](./assets/docs/images/jshint_check.png)
+![JSHint for JavaScript validation](./assets/docs/images/jshint_check.webp)
 </details>  
 
 
