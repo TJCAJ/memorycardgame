@@ -331,7 +331,7 @@ The [W3C Validator](https://validator.w3.org/) was used to validate HTML and the
 <details>
 <summary>WAVE report for accessibility</summary>
 
-![WAVE report for accessibility](./assets/docs/images/wave_accessibility_report.png)
+![WAVE report for accessibility](./assets/docs/images/wave_accessability_report_check.webp)
 </details>  
 
     
