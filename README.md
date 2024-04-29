@@ -1,12 +1,12 @@
 # WESTERN MEMORIES
 
-[View live project here on Github Pages](../assets/docs/images/mockup_western_memories.webp)
+[View live project here on Github Pages](https://tjcaj.github.io/western_memories/)
 
-WESTERN MEMORIES is a fun matching card game built with HTML, CSS, and JavaScript. The aim of the game is to enjoy playing with a deck of playing cards in a non-competitive, relaxed environment where goal is to match as many pairs as you can withinn a specified time-frame with the same value and colour in RED or BLACK. Hence _Diamonds_ and _Hearts_ are considered matching pairs, as well as _Clover_ and _Spades_. This is my first JavaScript project built for the Code Institute's Full Stack Software Development course.
+WESTERN MEMORIES is a fun matching card game built with HTML, CSS, and JavaScript. The aim of the game is to enjoy playing with playing cards in a non-competitive, relaxed environment where the goal is to match as many pairs as you can withinn a specified time-frame and with the same value and colour in RED or BLACK. Hence _Diamonds_ and _Hearts_ are considered matching pairs, as well as _Clover_ and _Spades_. This is my first JavaScript project built for the Code Institute's Full Stack Software Development course.
 
 <br>
 
-![screenshot of webpage on various media devices](./assets/docs/images/mockup_western_memories.webp)
+![screenshot of webpage on various media devices](./assets/docs//images/mockup_western_memories_all_devices.webp)
 
 * [UXD (User Experience Design)](#user-experience-ux)
   * [User Stories](#user-stories) 
@@ -36,7 +36,7 @@ WESTERN MEMORIES is an online memory card game styled in a classic western theme
 
 ### **User/Visitor Goals**
 
-WESTERN MEMORIES has been designed to be easily accessible and fun for all ages. It is a grid-style card game where the user is expected to flip as many matching cards as possible and keep them locked before the time is up. This is testing the users memory skills. Design and styling is responsive to different media screen sizes. A preset timer iniates a counter as the user press the start button. When the time is up a message of _"Time up"_ is displayed for the user.
+WESTERN MEMORIES has been designed to be easily accessible and fun for all ages. It is a grid-style card game where the user is expected to flip as many matching cards as possible and keep them locked before the time is up. This is testing the users memory skills. Design and styling is responsive to different media screen sizes. A preset timer iniates a counter as the user clicks a card. When the time is up a message of _Time up_ or _Well done_ is displayed for the user.
 
 ### **First-Time User/Visitor**
 
@@ -47,8 +47,7 @@ WESTERN MEMORIES has been designed to be easily accessible and fun for all ages.
 
 ### **Returning User/Visitor**
 
-  - As a returning user, I want to be able to set up the gameboard in diferent levels; _Easy_, _Medium_ or _Hard_.
-  - As a returning user, I want to be able to configure my game with at least three different amount of cards; 16, 24 and 36.
+  - As a returning user, I want to be able to play the game again and again.
   - As a returning visitor, I want to be able to play the game on different devices.
   - As a returning visitor, I want to be able to reset the game screen quickly if I share it with another user for their try.
   
@@ -60,9 +59,9 @@ WESTERN MEMORIES has been designed to be easily accessible and fun for all ages.
 
 ### **1. Strategy**
 
-My goal was to build an interactive, memory game suitable for all ages. I wished to use a deck of cards to set up an easy and familiar styling of the game. The theme is also to some extent a follow-up to my previous PP1 project in mind, where created website for a poker club. I would like to see this as continuation and learn how to create various games adapted for such a website.
+My goal was to build an interactive, memory game suitable for all ages. I wished to use selected values from a deck of cards to set up an easy and familiar styling of the game. The theme is also to some extent a follow-up to my previous PP1 project in mind, where created website for a poker club. I would like to see this as continuation and learn how to create various games adapted for such a website.
 
-  - The user will able to familiarise themselves with the game rules before starting tto play. 
+  - The user will able to familiarise themselves with the game rules before starting to play. 
 
 ### **2. Scope**
 
@@ -70,19 +69,19 @@ The game must be responsive and playable on mobile, tablet, and desktop-sized de
 
 ### **3. Structural** 
 
-  - The player is informed of the rules via a modal window accessible via a _Game Info_ button in the Header.
-  - Buttons gives the player options with various levels of the game.
+  - The player is informed of the rules from a modal window easy accessible via a _Rules & Info_ element in the Header, through a mouse-over function.
+  - Buttons gives the player option shuffle cards, reset and start time countdown via an initial click on any card.
   - The layout and design of the gameboard does not change much between screen sizes to keep the experience consistent.
 
 ### **4. Skeleton**
 
 The game site will have a clean layout with every feature identifiable and interactive.
 
-  - On loading, the page display the gameboard with 16 cards already shuffled. A preset timer of 60 seconds will automatically begin to count as the start game button is clicked.
+  - On loading, the page display the gameboard with 16 cards already shuffled. A preset timer of 60 seconds will automatically begin to count as user clicks any card.
   - The gameboard is situated in the center of the screen with the size of 4x4 gamecards displayed.
-  - _Timer/counter_ are located above the gameboard to the right for larger screens and on top for smaller screens.
-  - A _Reset_ button is located to the left, next to the _Start_ button.
-  - A message of "TIME UP" is displayed where the Timer is also displayed. 
+  - _Time/counter_ are located above the gameboard to the right in the navbar.
+  - A _Reset_ button is located to the left, next to the _Shuffle_ button.
+  - A message of "TIME UP" is displayed where the _Time_ is also displayed. 
 
   ### **Wireframes**  
   
@@ -98,32 +97,13 @@ The wireframes were created in Figma.
 
 ![desktop game info modal wireframe](./assets/docs/images/main_desktop_with-game_info_modal.png)
 </details>
-<details>
-<summary>Wireframe - Desktop Win modal window</summary>
 
-![desktop win modal wireframe](docs/images/)
-</details>
-<details>
-<summary>Wireframe - Desktop Gameboard</summary>
-
-![gameboard wireframe](docs/images/)
-</details>
 
 <details open>
-<summary>Wireframe - Mobile main window</summary>
+<summary>Wireframe - Mobile Main and Game Info modal window</summary>
 
-![main mobile window wireframe](docs/images)
+![desktop game info modal wireframe](./assets/docs/images/mobile_wireframe_mockup.webp)
 </details>
-<details >
-<summary>Wireframe - Mobile Start window</summary>
-
-![main desktop window wireframe](docs/images/)
-</details>
-<details >
-<summary>Wireframe - Mobile Win window</summary>
-
-![main desktop window wireframe](docs/images/)
-</details>  
 
 <br>  
 
@@ -131,7 +111,7 @@ The wireframes were created in Figma.
 
 ### **Colour Scheme**
 
-I used my own preferences to to select colours with clean and distinctive colours in order to to create the gameboard palette with clear contrasts and a user friendly experience.
+I initially used my own preferences to to select colours with clean and distinctive colours in order to to create the gameboard palette with clear contrasts and a user friendly experience. Then I further accentuated my choice of colours after creating the main background image with a free ai text to image generator from Freepik. The image was then uploaded to extract the Adobe colour scheme that I've used for the entire layout.
 
 ![gameboard colour palette swatch](./assets/docs/images/%20accessability_western_memories.webp)
 _Colour palette for the gameboard_
@@ -142,11 +122,11 @@ _Colour palette for the gameboard_
 
 I chose the serif font 'Rubik' from [Google Fonts](https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap) i find the the font clean and easy to read, therefore it is used throughout the project.
 
-![screenshot of google font inknut example](./assets/docs/images/screenshot_google_fonts.png)
+![screenshot of google font inknut example](./assets/docs/images/screenshot_google_fonts.webp)
 
 ### **Imagery**
 
-I wished to use a wellknown and a familiar card style. After som research I gathered a selection of copyright-free images used in a previous PP2 project by Chris Watton that I found via Slack and a peer-code-review. This is a repository by the developer [ImKennyYip](https://github.com/ImKennyYip/black-jack). That is originally a tutorial for a Blackjack card game.
+I wished to use a wellknown and a familiar card style. After some research I gathered a selection of copyright-free images used in a previous PP2 project by Chris Watton that I found via Slack and a peer-code-review. This is a repository by the developer [ImKennyYip](https://github.com/ImKennyYip/black-jack). That is originally a tutorial for a Blackjack card game. My own creation added to this, is the backside of the cards which I created via [MagicPattern](https://www.magicpattern.design/tools/css-backgrounds)
 
 ![selection of cards front](./assets/docs/images/front_card_ex.webp)
 ![selection of cards back](./assets/docs/images/card_bkg_yellow_blue.webp)
@@ -176,7 +156,7 @@ The gameboard greets the user when the page first loads. It is a 4x4 grid-style 
 <br>
 
 ### **2. Game Info Modal** 
-![screenshot of game info modal](./assets/docs/images/screenshot_of_game_info_modal.png)  
+![screenshot of info and rules modal](./assets/docs/images/info_rules_modal.webp)  
 
 This modal is integrated in the Header as a menu option and details the game rules. Pressing the 'Close' button takes te player back to the gameboard.
 
@@ -184,26 +164,26 @@ This modal is integrated in the Header as a menu option and details the game rul
   
 ### **3. Timer**
 ![screenshot of start button and timer](./assets/docs/images/screenshot_start_time.png)
-![screenshot of timer count](./assets/docs/images/screenshot_timer_count.png)
+![screenshot of timer count](./assets/docs/images/screenshot_timer_count.webp)
 ![screenshot of message time up](./assets/docs/images/screenshot_of_time_up.png)
-![screenshot of game over modal](./assets/docs/images/screenshot_of_game_over_modal.png)
+![screenshot of message well done](./assets/docs/images/well_done_time.webp)
+![screenshot of game over modal](./assets/docs/images/game_over_modal.webp)
+![screenshot of success modal](./assets/docs/images/)
 
-The timer starts when the user click on the "Start" button and works as a reversed countdown. As it reaches the end of the preset time intervall it displays that the time is up. A game over modal also display a message that; _"You couldn't help the lonesome Cowboy to remember the cards! Now he must duel to clear his losses at the gaming table!"_ This is to motivate the player to play again.
-
-Clicking the _Reset_ button, allows the player to start over and reset the timer indicated in the display with _"Time"_. The _Start_ button automatically shuffles the cards on the gameboard, 
+The timer starts when the user click on any card on the gameboard and works as a reversed countdown. As it reaches the end of the preset time intervall of 60 seconds, it either displays _TIME UP!_ or _"WELL DONE!_ depending on the players success or failure. In case the user fails to match all cards, a Game Over modal pops up with a message of; _"You couldn't help the cowboy remember the cards. Now he must duel to clear his name."_ This is to motivate the player to play again. Clicking the _Reset_ button inside the modal, allows the player to start over, click Reset and Shuffle before playing again by clicking on any of the cards on the gameboard. But if the player manage to match all cards within the time intervall another modal pops up with a mesage of; _"You saved the Cowboy from a duel!"_ and a choice to click a _Play again!_ button.
 
 <br>
 
 ## Future Features
 
-- As mentioned earlier, I wish to include extra features and options. For this I want to add the option to change level and try an easier or a more difficult version, with various time intervalls and adding more cards to the gameboard with options of 16, 24 and 36 cards. This will improve the gaming experience as it gives the user more ways to challenge his/her memory skills. But this was beyond the scope of this version and will be included in the next version.
+- As future features I wish to add the option to change level and try an easier or a more difficult version, with various time intervalls and adding more cards to the gameboard with options of 16, 24 and 36 cards. This will improve the gaming experience as it gives the user more ways to challenge his/her memory skills. But this was beyond the scope of this version and will be included in the next version.
 
-- I would also like to add setting up the gameboard with various levels and time frames. This will allow the user to develop their memory skills by advancing in levels and improve with shorter time intervalls. A responsivee modal or menu can offer optional settings. 
+- This will allow the user to develop their memory skills by advancing in levels and improve with shorter time intervalls. A responsive modal or menu can offer optional settings. 
 
 - In addition, I would also like to add the feature for all players with an option to enter "player's name" to personalise the gameboard. As well as to include a scoreboard with the top five results by the players' names entered. This will appeal to the more competitive players and enhance the gaming experience. 
 
-
 ---  
+
 
 ## Technologies Used
 
@@ -239,7 +219,7 @@ Clicking the _Reset_ button, allows the player to start over and reset the timer
 GitHub was used to deploy the website. These were the steps taken to achieve this:  
 
 1. Login to GitHub account.
-2. Navigate to the project repository, [memorycardgame](https://github.com/TJCAJ/memorycardgame.git).
+2. Navigate to the project repository, [western_memories](https://github.com/TJCAJ/western_memories).
 3. Click the Settings button near the top of the page.
 4. In the left-hand menu, find and click on the Pages button.
 5. In the Source section, choose 'main' from the drop-down, and select branch menu.
@@ -252,7 +232,7 @@ GitHub was used to deploy the website. These were the steps taken to achieve thi
 
 To clone this project from GitHub:  
 
-1. Visit the [Memory With Cards repository]().
+1. Visit the [Western Memories repository]().
 2. Click on the <b>Code</b> dropdown menu located beside the green <b>GitPod</b> button. 
 3. Choosing your preferred cloning option of <b>HTTPS, SSH</b> or <b>GitHub CLI</b>, click on the clipboard icon to copy the displayed URL. 
 4. Open the terminal in your code editor and change the working directory to the location that you wish to use for the cloned directory.
@@ -264,7 +244,7 @@ To clone this project from GitHub:
   
 To make a copy of this GitHub repository that allows you to view the content and make changes without affecting the original repository, please take the following steps:
   
-1. Login to <b>GitHub</b> and find [this repository](https://github.com/TJCAJ/memorycardgame).
+1. Login to <b>GitHub</b> and find [this repository](https://github.com/TJCAJ/western_memories).
 2. Locate the <b>Fork</b> button on the top, right hand side of the page.
 3. Click on the <b>Fork</b> button to create a copy of the repository in your GitHub account.
 
@@ -283,10 +263,12 @@ The primary goal for this project was for me to learn the basis of Javascript an
 - iPad Pro 2021
 - iPhone 12 Pro
 
+![test sheet](./assets/docs/test_sheet.png)
+
 <details open>
 <summary>Popular device testing on Chrome Dev Tools</summary>
 
-![dev tools screenshot](docs/images/)
+![dev tools screenshot](./assets/docs/)
 </details>
 
 On desktop, the browsers that I had access to for testing were:
@@ -302,7 +284,7 @@ The results of feature testing in <b>Chrome</b>, <b>Firefox</b>, <b>Edge</b> and
 
 ### **Bugs** 
 
- - Fix double click shows matched pairs when card clicked twice - My Mentor Gareth Mc Girr.
+ - Fixed double click shows matched pairs when card clicked twice - My Mentor Gareth Mc Girr.
 
 <br> 
 
@@ -384,6 +366,8 @@ The [W3C Validator](https://validator.w3.org/) was used to validate HTML and the
   - [ImKennyYip](https://github.com/ImKennyYip/black-jack), playing cards.
 
   - [Favicon](https://favicon.io/) for the favicon used for this site.
+
+  - [Freepik](https://www.freepik.com/pikaso) for creating images from my own text input with their ai text to image generator.
 
 <br> 
 
