@@ -51,6 +51,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const closeCardsButton = document.getElementById("close-cards-button");
 
     //Test to add function update score
+    //Add timerStopped variable here
+    let timerStopped = false;
+
     function updateScore() {
         finalScore.textContent = `Score: ${score}`;
     }
@@ -58,15 +61,19 @@ document.addEventListener('DOMContentLoaded', function () {
     // Show the allcards modal  - DOESN'T WORK YET--------------------------------------------------
     function showCardsModal() {
         allCardsModal.style.display = "block";
-        allCardsModalText = "Great You saved the Cowboy from a duel!";
+        // Rewrite code here//
+        allCardsModalText.textContent = "You saved the Cowboy from a duel!";
+        document.getElementById("countdown-timer").textContent = "Well done!";
+        clearInterval(timer);
+        timerStopped = true;
     }
 
     cards.forEach((card) => {
         card.addEventListener("click", () => {
-            //
             if (cardsMatched === totalMatchedPairs) {
-                return; //This should stop the event listener if all CARDS are matched  - DOESN'T WORK YET--------------------------------------------------
+                return; // This should stop the event listener if all CARDS are matched ---- NOW it does!-------
             }
+
             card.classList.add("clicked");
 
             if (counter === 0) {
@@ -94,11 +101,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     // Matched pairs shows Modal
                     if (cardsMatched === totalMatchedPairs) {
                         showCardsModal();
-                        //
-                        //
-                        // Stop the time if all cards are matched in time - DOESN'T WORK YET--------------------------------------------------
-                        clearInterval(timer);
-                        document.getElementById("countdown-timer").textContent = "Well done!";
                     }
 
                 } else {
@@ -129,6 +131,11 @@ document.addEventListener('DOMContentLoaded', function () {
     function startTimer() {
         clearInterval(timer);
         timer = setInterval(function () {
+            //Add timerStopped here
+            if (timerStopped) {
+                clearInterval(timer);
+                return;
+            }
             count++;
             updateTimer();
             if (count >= 60) {
