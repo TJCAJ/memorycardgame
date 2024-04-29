@@ -317,7 +317,7 @@ The [W3C Validator](https://validator.w3.org/) was used to validate HTML and the
 <details>
 <summary>Lighthouse Scores for Desktop</summary>
 
-![desktop lighthouse scores](./assets/docs/images/lighthouse_speed_test.png)
+![desktop lighthouse scores](./assets/docs/images/lighthouse_speed_test.webp)
 </details>  
  
 
