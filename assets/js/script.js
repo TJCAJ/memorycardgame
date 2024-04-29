@@ -62,8 +62,8 @@ document.addEventListener('DOMContentLoaded', function () {
     function showCardsModal() {
         allCardsModal.style.display = "block";
         // Rewrite code here//
-        allCardsModalText.textContent = "You saved the Cowboy from a duel!";
-        document.getElementById("countdown-timer").textContent = "Well done!";
+        // allCardsModalText.textContent = "You saved the Cowboy from a duel!";
+        // document.getElementById("countdown-timer").textContent = "Well done!";
         clearInterval(timer);
         timerStopped = true;
     }

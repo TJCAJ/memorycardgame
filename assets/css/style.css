@@ -257,7 +257,8 @@ p {
     position: absolute;
     left: 50%;
     top: 50%;
-    height: 750px;
+    width: 80vh;
+    height: 60vh;
     transform: translate(-50%, -50%);
     border-radius: 6px;
     background-image: url("../images/well_done_bkg_modal.webp");
@@ -269,28 +270,32 @@ p {
 }
 
 #display-allcards {
-    display: flex;
     width: 80vh;
-    flex-direction: column;
     font-size: 50px;
-    font: bold;
-    text-align: center;
-    align-content: space-around;
+
+}
+
+#modal-text>h1 {
+    color: rgb(220, 202, 42);
+    font-family: "Rubik", sans-serif;
     text-shadow: 0 3px 11px rgba(21, 21, 21, .2);
+}
+
+#modal-text>p {
+    color: #000000;
+    font-family: "Rubik", sans-serif;
+    text-shadow: 0 3px 11px rgba(21, 21, 21, .2);
+    text-transform: uppercase;
+    width: 41vh;
 }
 
 #modal-text {
     display: flex;
     flex-direction: column;
-    font-size: 50px;
-    font-family: "Rubik", sans-serif;
-    color: rgb(220, 202, 42);
-    text-align: center;
     text-transform: uppercase;
-    font: bold;
-    text-shadow: 0 3px 11px rgba(21, 21, 21, .2);
-    font: bold;
-    padding: 10px;
+    font-family: "Rubik", sans-serif;
+    align-items: center;
+    text-align: center;
 }
 
 #close-cards-button {
@@ -303,7 +308,7 @@ p {
     text-transform: uppercase;
     font: bold;
     background-color: rgb(220, 202, 42);
-    width: 350px;
+    width: 20vh;
 }
 
 /* -- game area -- */
@@ -625,13 +630,15 @@ footer h4 {
         line-height: 1;
     }
 
-    #allcardsmodal,
-    h2 {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        text-align: center;
-
+    #allcardsmodal {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        align-self: center;
+        align-content: center;
+        height: auto;
+        width: 80%;
+        margin-top: 100px;
     }
 
     #gameOverModal {
@@ -641,33 +648,47 @@ footer h4 {
         background-repeat: no-repeat;
         margin-top: 50px;
         width: 80%;
-
-        #game-over-txt {
-            line-height: 1.2;
-            font-size: 3vh;
-            width: 80%;
-            justify-content: center;
-        }
-
-        #close-cards-button {
-            width: 300px;
-        }
-
-
-        /* Media query - tablets and larger devices (max 1500px) */
-        @media (mmax-width:1500px) {
-            body {
-                overflow-y: hidden;
-            }
-
-            #modal {
-                width: 70%;
-            }
-
-            #allcardsmodal {
-                width: 70%;
-            }
-
-        }
     }
+
+    #display-allcards {
+        width: auto;
+    }
+
+    #modal-text {
+        align-items: center;
+        text-align: center;
+    }
+
+    #modal-text>p {
+        width: 30vh;
+    }
+
+    #game-over-txt {
+        line-height: 1.2;
+        font-size: 3vh;
+        width: 80%;
+        justify-content: center;
+    }
+
+    #close-cards-button {
+        width: 300px;
+    }
+
+
+    /* Media query - tablets and larger devices (max 1500px) */
+    @media (mmax-width:1500px) {
+        body {
+            overflow-y: hidden;
+        }
+
+        #modal {
+            width: 70%;
+        }
+
+        #allcardsmodal {
+            width: 70%;
+        }
+
+    }
+}
 }
