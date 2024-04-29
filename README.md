@@ -168,9 +168,9 @@ This modal is integrated in the Header as a menu option and details the game rul
 ![screenshot of message time up](./assets/docs/images/screenshot_of_time_up.png)
 ![screenshot of message well done](./assets/docs/images/well_done_time.webp)
 ![screenshot of game over modal](./assets/docs/images/game_over_modal.webp)
-![screenshot of success modal](./assets/docs/images/)
+![screenshot of success modal](./assets/docs/images/success_modal_good_job.webp)
 
-The timer starts when the user click on any card on the gameboard and works as a reversed countdown. As it reaches the end of the preset time intervall of 60 seconds, it either displays _TIME UP!_ or _"WELL DONE!_ depending on the players success or failure. In case the user fails to match all cards, a Game Over modal pops up with a message of; _"You couldn't help the cowboy remember the cards. Now he must duel to clear his name."_ This is to motivate the player to play again. Clicking the _Reset_ button inside the modal, allows the player to start over, click Reset and Shuffle before playing again by clicking on any of the cards on the gameboard. But if the player manage to match all cards within the time intervall another modal pops up with a mesage of; _"You saved the Cowboy from a duel!"_ and a choice to click a _Play again!_ button.
+The timer starts when the user click on any card on the gameboard and works as a reversed countdown. As it reaches the end of the preset time intervall of 60 seconds, it either displays _TIME UP!_ or _"WELL DONE!_ depending on the players success or failure. In case the user fails to match all cards, a Game Over modal pops up with a message of; _"You couldn't help the cowboy remember the cards. Now he must duel to clear his name."_ This is to motivate the player to play again. Clicking the _Reset_ button inside the modal, allows the player to start over, click Reset and Shuffle before playing again by clicking on any of the cards on the gameboard. But if the player manage to match all cards within the time intervall another modal pops up with a mesage of; _"God Job! You saved the Cowboy from a duel!"_ and a choice to click a _Play again!_ button.
 
 <br>
 
@@ -285,6 +285,8 @@ The results of feature testing in <b>Chrome</b>, <b>Firefox</b>, <b>Edge</b> and
 ### **Bugs** 
 
  - Fixed double click shows matched pairs when card clicked twice - My Mentor Gareth Mc Girr.
+
+ - JShint shows a warning for a function within loops referencing an outer scoped variable that may lead to confucing semantic. (starTime). I choose to overlook this warning.
 
 <br> 
 
