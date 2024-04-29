@@ -40,7 +40,8 @@
     <main>
         <!-- Header -->
 
-        <header class role="img" aria-label="a desert landscape with a tournado swirling">
+        <header>
+            <span role="img" aria-label="a desert landscape with a tournado swirling"></span>
             <div class="title">
                 <h1>WESTERN MEMORIES</h1>
             </div>
@@ -64,9 +65,9 @@
 
         <!-- Game Board with Playing Card Images -->
 
-        <section class="gameboard" role="img"
-            aria-label="a lonesome cowboy sitting in a saloon at a gambling table looking at playing cards">
-
+        <section class="gameboard">
+            <span role="img"
+                aria-label="a lonesome cowboy sitting in a saloon at a gambling table looking at playing cards"></span>
             <div class="card-wrapper" id="cardcontainer">
 
                 <div id="gameboard-heading">
@@ -156,7 +157,6 @@
                     </li>
                 </ul>
             </div>
-            </div>
         </section>
 
         <!-- Footer -->
@@ -164,7 +164,6 @@
         <footer>
 
             <div id="footer-info">
-
                 <div id="modal-trigger">
                     <!-- Modal overlay with info how to play -->
                     <div id="overlay" role="img" aria-label="a desert landscape with a cowboy riding towards sunset">
@@ -179,33 +178,28 @@
                             <li>
                                 This is a <b>One Player Game</b>
                             </li>
-                            <br>
                             <li>
                                 Pair CARDS in <b>RED</b> or <b>BLACK</b> before <b>TIME UP</b>
                             </li>
-                            <br>
                             <li>
                                 Click any <b>CARD</b> to <b>START</b> and run <b>TIME</b>
                             </li>
-                            <br>
                             <li>
                                 Click <b>SHUFFLE</b> to shuffle cards
                             </li>
-                            <br>
                             <li>
                                 Click <b>RESET</b> to start over<br>
                             </li>
-                            <br>
                             <li>
                                 <b>You</b> have<b> 60 seconds</b> to finish<br>
                             </li>
                         </ul>
-                        <br>
-                        <br>
-                        <button id="close-modal-btn">CLOSE</button>
+                        <div>
+                            <button id="close-modal-btn">CLOSE</button>
+                        </div>
                     </div>
                 </div>
-
+            </div>
 
         </footer>
 

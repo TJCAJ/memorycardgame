@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const finalScore = document.getElementById("final-score");
 
     // Add the Modal for matched pairs
-    const allCardsModal = document.getElementById("allcardsmodal")
-    const allCardsModalText = document.getElementById("modal-text");
+    const allCardsModal = document.getElementById("allcardsmodal");
+    //const allCardsModalText = document.getElementById("modal-text");
     const closeCardsButton = document.getElementById("close-cards-button");
 
     //Test to add function update score
@@ -58,10 +58,12 @@ document.addEventListener('DOMContentLoaded', function () {
         finalScore.textContent = `Score: ${score}`;
     }
 
-    // Show the allcards modal  - DOESN'T WORK YET--------------------------------------------------
+    // Show the allcards modal 
     function showCardsModal() {
         allCardsModal.style.display = "block";
         // Rewrite code here//
+
+        // This is an unused variable
         // allCardsModalText.textContent = "You saved the Cowboy from a duel!";
         // document.getElementById("countdown-timer").textContent = "Well done!";
         clearInterval(timer);
@@ -71,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
     cards.forEach((card) => {
         card.addEventListener("click", () => {
             if (cardsMatched === totalMatchedPairs) {
-                return; // This should stop the event listener if all CARDS are matched ---- NOW it does!-------
+                return; // This should stop the event listener if all CARDS are matched
             }
 
             card.classList.add("clicked");
@@ -121,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Close matched Pairs success Modal
     closeCardsButton.addEventListener("click", () => {
         allCardsModal.style.display = "none";
-    })
+    });
 
 
     // Functions related to timer and starting the game
