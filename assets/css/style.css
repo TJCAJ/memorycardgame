@@ -89,6 +89,21 @@ header {
     transform: scale(1.10);
 }
 
+#final-score {
+    width: 150px;
+    height: 50px;
+    font-family: "Rubik", sans-serif;
+    font-size: large;
+    padding: 10px;
+    border-radius: 6px;
+    color: black;
+    background-color: rgb(220, 202, 42);
+    box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+
 #countdown-timer {
     width: 120px;
 
@@ -225,6 +240,53 @@ p {
     background-color: rgb(220, 202, 42);
 }
 
+/* All cards modal */
+
+#allcardsmodal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80vh;
+    height: 750px;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+    background-image: url("../images/well_done_bkg_modal.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 6px;
+    z-index: 70;
+    padding: 2vh;
+    z-index: 8;
+}
+
+#modal-text {
+    display: flexbox;
+    flex-direction: column;
+    font-size: 50px;
+    font-family: "Rubik", sans-serif;
+    color: rgb(220, 202, 42);
+    text-align: center;
+    text-transform: uppercase;
+    font: bold;
+    text-shadow: 0 3px 11px 0 rgba(21, 21, 21, .2);
+    z-index: 10;
+}
+
+#close-cards-button {
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 2px 9px 0 rgba(21, 21, 21, .2);
+    font-family: "Rubik", sans-serif;
+    font-size: 25px;
+    border: 2px solid rgb(82, 21, 152);
+    text-transform: uppercase;
+    font: bold;
+    background-color: rgb(220, 202, 42);
+    z-index: 12;
+}
 
 /* -- game area -- */
 

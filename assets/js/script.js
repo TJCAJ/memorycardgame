@@ -35,10 +35,38 @@ document.addEventListener('DOMContentLoaded', function () {
     let firstSelection = "";
     let secondSelection = "";
 
+    //Test to add score to this code snippet HERE
+    let score = 0;
+
+    //Add a variable for matched cards to show a Modal if all cards are matched in time
+    let cardsMatched = 0;
+    const totalMatchedPairs = 16;
+
     const cards = document.querySelectorAll(".card");
+    const finalScore = document.getElementById("final-score");
+
+    // Add the Modal for matched pairs
+    const allCardsModal = document.getElementById("allcardsmodal")
+    const allCardsModalText = document.getElementById("modal-text");
+    const closeCardsButton = document.getElementById("close-cards-button");
+
+    //Test to add function update score
+    function updateScore() {
+        finalScore.textContent = `Score: ${score}`;
+    }
+
+    // Show the allcards modal
+    function showCardsModal() {
+        allCardsModal.style.display = "block";
+        allCardsModalText = "Great You saved the Cowboy from a duel!";
+    }
 
     cards.forEach((card) => {
         card.addEventListener("click", () => {
+            //
+            if (cardsMatched === totalMatchedPairs) {
+                return; //This should stop the event listener if all  are matched
+            }
             card.classList.add("clicked");
 
             if (counter === 0) {
@@ -56,7 +84,22 @@ document.addEventListener('DOMContentLoaded', function () {
                     correctCards.forEach((card) => {
                         card.classList.add("checked");
                         card.classList.remove("clicked");
+                        score++;
+                        // Add matched pairs
+                        cardsMatched++;
+                        //Test score count
+                        updateScore();
                     });
+
+                    // Matched pairs shows Modal
+                    if (cardsMatched === totalMatchedPairs) {
+                        showCardsModal();
+                        //
+                        //
+                        // Stop the time if all cards are matched in time - DOESN'T WORK--------------------------------------------------
+                        clearInterval(timer);
+                        document.getElementById("countdown-timer").textContent = "Well done!";
+                    }
 
                 } else {
                     const incorrectCards = document.querySelectorAll(".card.clicked");
@@ -73,6 +116,11 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    // Close matched Pairs success Modal
+    closeCardsButton.addEventListener("click", () => {
+        allCardsModal.style.display = "none";
+    })
+
 
     // Functions related to timer and starting the game
     let count = 0;
@@ -83,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {
         timer = setInterval(function () {
             count++;
             updateTimer();
-            if (count >= 10) {
+            if (count >= 60) {
                 clearInterval(timer);
                 document.getElementById("countdown-timer").textContent = "TIME UP";
                 gameOver();
