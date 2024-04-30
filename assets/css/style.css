@@ -525,12 +525,6 @@ footer h4 {
 /* Media query - tablets and larger devices (max 340px) */
 @media (max-width:340px) {
 
-    body {
-        display: flex;
-        height: auto;
-        overflow-x: hidden;
-    }
-
     #modal {
         width: 95%;
     }
@@ -543,12 +537,6 @@ footer h4 {
 
 /* Media query - tablets and larger devices (max 900px) */
 @media (max-width:900px) {
-
-    body {
-        display: flex;
-        height: auto;
-        overflow-x: hidden;
-    }
 
     header {
         display: flex;
@@ -686,9 +674,6 @@ footer h4 {
 
     /* Media query - tablets and larger devices (max 1500px) */
     @media (mmax-width:1500px) {
-        body {
-            overflow-y: hidden;
-        }
 
         #modal {
             width: 70%;
