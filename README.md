@@ -380,6 +380,8 @@ The [W3C Validator](https://validator.w3.org/) was used to validate HTML and the
 
   - [Freepik](https://www.freepik.com/pikaso) for creating images from my own text input with their ai text to image generator.
 
+  - [Adobe Photoshop](https://photoshop.adobe.com/) for enhancing images with generating backgrounds for images initially created in Freepik.
+
 <br> 
 
 ### **Acknowledgements**  
