@@ -126,7 +126,7 @@ header {
 /* -- modal with info & rules -- */
 
 #modal {
-    /* -- display: none; -- */
+    display: none;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -198,7 +198,7 @@ header {
 /* Game Over Modal */
 
 #gameOverModal {
-    /* -- display: none; -- */
+    display: none;
     align-items: center;
     justify-content: center;
     position: absolute;
@@ -257,7 +257,7 @@ p {
 /* Get all cards modal */
 
 #allcardsmodal {
-    /* -- display: none; -- */
+    display: none;
     align-items: center;
     justify-content: center;
     position: absolute;
