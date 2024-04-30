@@ -158,7 +158,16 @@ The gameboard greets the user when the page first loads. It is a 4x4 grid-style 
 ### **2. Game Info Modal** 
 ![screenshot of info and rules modal](./assets/docs/images/info_rules_modal.webp)  
 
-This modal is integrated in the Header as a menu option and details the game rules. Pressing the 'Close' button takes te player back to the gameboard.
+This modal is integrated in the Footer and details the game rules and how to play. 
+
+- This is a One Player Game
+- Pair CARDS in RED or BLACK before TIME UP
+- Click any CARD to START and run TIME                           
+- Click SHUFFLE to shuffle cards                        
+- Click RESET to start over                      
+- You have 60 seconds to help  The Cowboy
+
+Pressing the 'Close' button takes te player back to the gameboard.
 
 <br>
   
