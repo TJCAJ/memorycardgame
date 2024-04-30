@@ -130,7 +130,7 @@ header {
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 800px;
+    width: 50em;
     height: auto;
     transform: translate(-50%, -50%);
     border: 2px solid #000000;
@@ -672,13 +672,14 @@ footer h4 {
 
 
     /* Media query - tablets and larger devices (max 1500px) */
-    @media (mmax-width:1500px) {
+    @media (max-width:1500px) {
 
         #modal {
             width: 70%;
         }
 
-        #allcardsmodal {
+        #allcardsmodal,
+        #display-allcards {
             width: 70%;
         }
 
@@ -687,7 +688,7 @@ footer h4 {
         }
 
         .gameboard {
-            width: 70%;
+            width: 100%;
         }
 
     }
