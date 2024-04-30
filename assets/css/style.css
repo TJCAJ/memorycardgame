@@ -65,6 +65,8 @@ header {
     box-shadow: 0 2px 9px 0 rgba(11, 11, 21, .2);
 }
 
+/* -- navbar -- */
+
 .navbar {
     display: flex;
     background: url("../images/memory_headings_bkg.webp") no-repeat center center/cover;
@@ -122,7 +124,7 @@ header {
     flex-wrap: wrap;
 }
 
-/* -- modal with game info -- */
+/* -- modal with info & rules -- */
 
 #modal {
     display: none;
@@ -173,7 +175,6 @@ header {
     right: 10%;
     bottom: 10%;
     background-image: url("../images/modal_overlay_bkg_desert.webp");
-    /*background-color: #0d4754;*/
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 6px;
@@ -195,7 +196,7 @@ header {
     transform: scale(1.20);
 }
 
-/* Additonal Game Over Modal */
+/* Game Over Modal */
 
 #gameOverModal {
     display: none;
