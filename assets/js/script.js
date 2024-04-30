@@ -35,23 +35,21 @@ document.addEventListener('DOMContentLoaded', function () {
     let firstSelection = "";
     let secondSelection = "";
 
-    //Test to add score to this code snippet HERE
+    //Added score to this code snippet HERE
     let score = 0;
 
-    //Add a variable for matched cards to show a Modal if all cards are matched in time
+    //Added a variable for matched cards to show a Modal if all cards are matched in time
     let cardsMatched = 0;
     const totalMatchedPairs = 16;
 
     const cards = document.querySelectorAll(".card");
     const finalScore = document.getElementById("final-score");
 
-    // Add the Modal for matched pairs
+    // Added const Modal for matched pairs
     const allCardsModal = document.getElementById("allcardsmodal");
-    //const allCardsModalText = document.getElementById("modal-text");
     const closeCardsButton = document.getElementById("close-cards-button");
 
-    //Test to add function update score
-    //Add timerStopped variable here
+    //TimerStopped variable
     let timerStopped = false;
 
     function updateScore() {
@@ -61,11 +59,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Show the allcards modal 
     function showCardsModal() {
         allCardsModal.style.display = "block";
-        // Rewrite code here//
 
-        // This is an unused variable
-        // allCardsModalText.textContent = "You saved the Cowboy from a duel!";
-        // document.getElementById("countdown-timer").textContent = "Well done!";
+
         clearInterval(timer);
         timerStopped = true;
     }
@@ -94,9 +89,9 @@ document.addEventListener('DOMContentLoaded', function () {
                         card.classList.add("checked");
                         card.classList.remove("clicked");
                         score++;
-                        // Add matched pairs
+                        // Added matched pairs
                         cardsMatched++;
-                        //Test score count
+                        //Score count
                         updateScore();
                     });
 
@@ -127,13 +122,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     // Functions related to timer and starting the game
+
     let count = 0;
     let timer;
 
     function startTimer() {
         clearInterval(timer);
         timer = setInterval(function () {
-            //Add timerStopped here
+
             if (timerStopped) {
                 clearInterval(timer);
                 return;
@@ -147,11 +143,11 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }, 1000);
     }
-
+    //Reload
     function reloadPage() {
         location.reload();
     }
-
+    //Timer
     function updateTimer() {
         document.getElementById("countdown-timer").textContent = count;
     }
@@ -169,10 +165,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-
     document.getElementById("reset-button").addEventListener("click", reloadPage);
-    // Add function to shuffle cards
 
+
+    // Function to Shuffle cards
     function shuffleCards() {
         const cardlist = document.getElementById('card-list');
         const cards = Array.from(cardlist.children);
@@ -181,12 +177,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         cards.forEach(card => cardlist.appendChild(card));
     }
-    // Function to handle TIME UP
+    // Function to handle TIME UP and show Game Over modal
     function gameOver() {
         document.getElementById('gameOverModal').style.display = 'flex';
     }
 
-    // Adds an event listener to the restart button
+    // Event listener to the restart button
     document.getElementById('restartButton').addEventListener('click', function () {
         // Closes the modal
         document.getElementById('gameOverModal').style.display = 'none';
