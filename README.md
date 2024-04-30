@@ -268,7 +268,7 @@ The primary goal for this project was for me to learn the basis of Javascript an
 <details open>
 <summary>Popular device testing on Chrome Dev Tools</summary>
 
-![dev tools screenshot](./assets/docs/)
+![dev tools screenshot](./assets/docs/images/dev_tools_screenshot.webp)
 </details>
 
 On desktop, the browsers that I had access to for testing were:
@@ -319,14 +319,14 @@ The [W3C Validator](https://validator.w3.org/) was used to validate HTML and the
 <details>
 <summary>Lighthouse Scores for Desktop</summary>
 
-![desktop lighthouse scores](./assets/docs/images/lighthouse_speed_test.webp)
+![desktop lighthouse scores](./assets/docs/images/lighthouse_speedtest_computer.webp)
 </details>  
  
 
 <details>
 <summary>Lighthouse Scores for Mobile - performance optimised by using already compressed .png files.</summary>
 
-![desktop lighthouse scores](docs/validation/mobile_lighthouse)
+![desktop lighthouse scores](./assets/docs/images/lighthouse_speedtest_mobile.webp)
 </details>  
 
 
