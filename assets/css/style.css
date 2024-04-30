@@ -1,5 +1,9 @@
 /* Asterisk wildcard selector to override default styles added by the browser */
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,6 +16,8 @@ body {
     display: flex;
     height: auto;
     overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    min-height: 100vh;
 }
 
 /* Main content styling */

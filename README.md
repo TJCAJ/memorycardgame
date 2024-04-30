@@ -263,7 +263,7 @@ The primary goal for this project was for me to learn the basis of Javascript an
 - iPad Pro 2021
 - iPhone 12 Pro
 
-![test sheet](./assets/docs/test_sheet.png)
+![test sheet](./assets/docs/images/test_sheet.png)
 
 <details open>
 <summary>Popular device testing on Chrome Dev Tools</summary>
