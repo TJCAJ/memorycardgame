@@ -1,8 +1,10 @@
 # WESTERN MEMORIES
 
-[View live project here on Github Pages](https://tjcaj.github.io/western_memories/)
+[View live project here on Github Pages](https://github.com/TJCAJ/western_memories.git)
 
 WESTERN MEMORIES is a fun matching card game built with HTML, CSS, and JavaScript. The aim of the game is to enjoy playing with playing cards in a non-competitive, relaxed environment where the goal is to match as many pairs as you can withinn a specified time-frame and with the same value and colour in RED or BLACK. Hence _Diamonds_ and _Hearts_ are considered matching pairs, as well as _Clover_ and _Spades_. This is my first JavaScript project built for the Code Institute's Full Stack Software Development course.
+
+[View live site here](https://tjcaj.github.io/western_memories/)
 
 <br>
 
